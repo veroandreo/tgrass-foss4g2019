@@ -35,6 +35,7 @@ GRASS GIS.
 <p align="center">
     <img src="https://2019.foss4g.org/wp-content/uploads/2018/07/logo-site.png" width="250">
     <img src="https://grass.osgeo.org/uploads/images/logo/grassgis_logo_colorlogo_text_alphabg.png" width="150">
+    <img src="https://2019.foss4g.org/wp-content/uploads/2018/07/logo-site.png" width="250">
 </p>
 
 
