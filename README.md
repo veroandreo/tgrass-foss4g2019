@@ -1,8 +1,8 @@
 # Spatio-temporal data processing and visualization with GRASS GIS
 
-<p align="right">
+<p align="center">
     <img src="https://2019.foss4g.org/wp-content/uploads/2018/07/logo-site.png">
-    <img src="https://grass.osgeo.org/uploads/images/logo/grassgis_logo_colorlogo_text_alphabg.png" width="350">
+    <img src="https://grass.osgeo.org/uploads/images/logo/grassgis_logo_colorlogo_text_alphabg.png" width="150">
 </p>
 
 [GRASS GIS](https://grass.osgeo.org) is a general purpose Free and Open 
