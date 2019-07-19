@@ -2,7 +2,7 @@
 
 <p align="right">
     <img src="https://2019.foss4g.org/wp-content/uploads/2018/07/logo-site.png">
-    <img src="https://grass.osgeo.org/uploads/images/logo/grassgis_logo_colorlogo_text_alphabg.png"
+    <img src="https://grass.osgeo.org/uploads/images/logo/grassgis_logo_colorlogo_text_alphabg.png" size="350px">
 </p>
 
 [GRASS GIS](https://grass.osgeo.org) is a general purpose Free and Open 
@@ -11,9 +11,9 @@ GRASS GIS has also incorporated a powerful support for time series,
 the so called **TGRASS**. Through this, it became the first open source 
 temporal GIS with comprehensive spatio-temporal analysis, processing and
 visualization capabilities. 
-The temporal functionality *makes it easy to manage, analyse and 
+The temporal functionality **makes it easy to manage, analyse and 
 visualize climatic data, vegetation index time series, harvest data or 
-land use changes over time*. Raster, vector and 3D raster time series 
+land use changes over time**. Raster, vector and 3D raster time series 
 are handled through a special data type called **space time data sets 
 (STDS)** which are used as input in TGRASS modules. TGRASS incredibly 
 simplifies the processing and analysis of large time series of hundreds 
