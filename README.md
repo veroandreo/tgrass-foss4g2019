@@ -38,6 +38,10 @@ GRASS GIS.
     <img src="https://2019.foss4g.org/wp-content/uploads/2018/07/logo-site.png" width="250">
 </p>
 
+## Presentations
+
+* [Intro](https://gitpitch.com/veroandreo/tgrass-foss4g2019/master?p=slides/intro)
+* [TGRASS](https://gitpitch.com/veroandreo/tgrass-foss4g2019/master?p=slides/tgrass)
 
 ## Software
 
