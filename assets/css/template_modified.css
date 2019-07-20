@@ -19,9 +19,9 @@ body {
 }
 
 .reveal {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   color: #1C1C1C;
-  font-size: 40px;
+  font-size: 35px;
 }
 
 ::selection {
@@ -204,8 +204,8 @@ body {
 }
 
 .reveal pre code {
-  font-size: 1.1em;
-  line-height: 1.1;
+  font-size: 1.2em;
+  line-height: 1.3;
   border-radius: 10px;
   display: block;
   padding: 1px;
@@ -219,16 +219,16 @@ body {
   max-height: 40vh !important;
 }
 
-/*
 .reveal .slides section .code-presenting-annotation {
   color: white;
+/*
   background: #b5ad86;
   padding: 0px 15px;
   border-radius: 15px;
   opacity: 0.90 !important;
-  font-size: 50% !important;
-}
 */
+  font-size: 40% !important;
+}
 
 .reveal table {
   margin: auto;
