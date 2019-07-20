@@ -13,7 +13,7 @@ published : true
 # Doc: https://gitpitch.com/docs/settings/theme
 #
 
-theme : simple
+theme : template
 
 #~ theme-background : [ "#FFF" ]
 theme-headline   : [ "Fira Sans", "#111111", "none" ]
