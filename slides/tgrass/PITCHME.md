@@ -1,4 +1,4 @@
----?image=assets/template/img/grass.png&position=bottom&size=100% 30%
+---?image=assets/img/grass_template.png&position=bottom&size=100% 30%
 @title[Front page]
 
 @snap[north span-100]
@@ -10,7 +10,7 @@
 <br>Dra. Verónica Andreo<br>CONICET - INMeT<br><br>Instituto Gulich. Córdoba, 2019<br>
 @snapend
 
----?image=assets/template/img/grass.png&position=bottom&size=100% 30%
+---?image=assets/img/grass_template.png&position=bottom&size=100% 30%
 
 ## Spatio-temporal data processing & visualization in GRASS GIS
 
@@ -85,13 +85,13 @@ STDS in each mapset.
 - @color[#8EA33B](**t.rast3d.\***): Modules that deal with STR3DS
 - @color[#8EA33B](**t.vect.\***): Modules that deal with STVDS
 
----?image=assets/template/img/grass.png&position=bottom&size=100% 30%
+---?image=assets/img/grass_template.png&position=bottom&size=100% 30%
 
 ## TGRASS framework and workflow
 
 +++?image=assets/img/tgrass_flowchart.png&position=center&size=auto 93%
 
----?image=assets/template/img/grass.png&position=bottom&size=100% 30%
+---?image=assets/img/grass_template.png&position=bottom&size=100% 30%
 
 ## Hands-on to raster time series in GRASS GIS
 
