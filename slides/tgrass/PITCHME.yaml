@@ -13,12 +13,12 @@ published : true
 # Doc: https://gitpitch.com/docs/settings/theme
 #
 
-theme : template
+#~ theme : template
 
 #~ theme-background : [ "#FFF" ]
-theme-headline   : [ "Fira Sans", "#111111", "none" ]
-theme-byline     : [ "Fira Sans", "#111111", "none" ]
-theme-text       : [ "Roboto", "#1C1C1C", "none" ]
+#~ theme-headline   : [ "Fira Sans", "#111111", "none" ]
+#~ theme-byline     : [ "Fira Sans", "#111111", "none" ]
+#~ theme-text       : [ "Roboto", "#1C1C1C", "none" ]
 #~ theme-links      : [ "#5289F7", "#5254F7" ]
 #~ theme-code       : [ "Source Code Pro" ]
 #~ theme-controls   : [ "#484848" ]
@@ -29,7 +29,7 @@ theme-text       : [ "Roboto", "#1C1C1C", "none" ]
 # Doc: https://gitpitch.com/docs/settings/custom-theme
 #
 
-theme-override : assets/css/old_template.css
+theme-override : assets/css/template_modified.css
 
 #
 # Logo Setting

@@ -3,16 +3,19 @@
 
 @snap[north span-100]
 <br>
-<h2>Procesamiento y análisis de series temporales en @color[green](GRASS GIS)</h2>
+<h2>Spatio-temporal data processing & visualization in @color[green](GRASS GIS)</h2>
 @snapend
 
 @snap[south message-box-white]
 <br>Dra. Verónica Andreo<br>CONICET - INMeT<br><br>Instituto Gulich. Córdoba, 2019<br>
 @snapend
 
----?image=assets/img/grass_template.png&position=bottom&size=100% 30%
+---
 
-## Spatio-temporal data processing & visualization in GRASS GIS
+### Who are we?
+
+
+put pics and affil
 
 ---
 
