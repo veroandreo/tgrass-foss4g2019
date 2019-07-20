@@ -13,23 +13,23 @@ published : true
 # Doc: https://gitpitch.com/docs/settings/theme
 #
 
-theme : template
+#~ theme : template
 
-theme-background : [ "#FFF" ]
-theme-headline   : [ "Raleway", "#5289F7", "none" ]
-theme-byline     : [ "Raleway", "#111111", "none" ]
-theme-text       : [ "Ubuntu", "#1C1C1C", "none" ]
-theme-links      : [ "#5289F7", "#5254F7" ]
-theme-code       : [ "Source Code Pro" ]
-theme-controls   : [ "#484848" ]
-theme-margins    : [ "0", "15px" ]
+#~ theme-background : [ "#FFF" ]
+#~ theme-headline   : [ "Fira Sans", "#111111", "none" ]
+#~ theme-byline     : [ "Fira Sans", "#111111", "none" ]
+#~ theme-text       : [ "Roboto", "#1C1C1C", "none" ]
+#~ theme-links      : [ "#5289F7", "#5254F7" ]
+#~ theme-code       : [ "Source Code Pro" ]
+#~ theme-controls   : [ "#484848" ]
+#~ theme-margins    : [ "0", "15px" ]
 
 #
 # Theme-Override Setting
 # Doc: https://gitpitch.com/docs/settings/custom-theme
 #
 
-theme-override : assets/template/css/PITCHME.css
+theme-override : assets/css/template_modified.css
 
 #
 # Logo Setting
@@ -44,7 +44,7 @@ logo-position: top-left
 # Doc: https://gitpitch.com/docs/settings/footnote
 #
 
-footnote : "Curso GRASS GIS - CONAE 2019"
+footnote : "TGRASS workshop - FOSS4G 2019, Bucharest"
 
 #
 # Highlight (Code) Setting

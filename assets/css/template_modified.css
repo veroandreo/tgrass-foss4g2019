@@ -47,7 +47,7 @@ body {
  *********************************************/
 .reveal h1,
 .reveal h2 {
-  color: #5289F7;
+  color: #1C1C1C;
   font-family: "Fira Sans", sans-serif;
   text-transform: bold;
   margin: 0 0 15px 0;
@@ -72,11 +72,11 @@ body {
 }
 
 .reveal h1 {
-  font-size: 3em;
+  font-size: 2.7em;
 }
 
 .reveal h2 {
-  font-size: 2.11em;
+  font-size: 2.0em;
 }
 
 .reveal h3 {
@@ -198,7 +198,7 @@ body {
 
 .reveal code {
   font-family: "Source Code Pro Medium", monospace;
-  font-size: 0.9em;
+  font-size: 1.1em;
   text-transform: none;
   font-feature-settings: "calt" 1;
 }
@@ -219,14 +219,16 @@ body {
   max-height: 40vh !important;
 }
 
+/*
 .reveal .slides section .code-presenting-annotation {
   color: white;
   background: #b5ad86;
   padding: 0px 15px;
   border-radius: 15px;
-  opacity: 0.75 !important;
+  opacity: 0.90 !important;
   font-size: 50% !important;
 }
+*/
 
 .reveal table {
   margin: auto;
