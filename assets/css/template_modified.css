@@ -50,7 +50,7 @@ body {
   color: #1C1C1C;
   font-family: "Fira Sans";
   font-weight: bold !important;
-  text-transform: uppercase;
+  text-transform: none;
   margin: 0 0 15px 0;
   line-height: 1.2;
   text-shadow: none;
@@ -165,7 +165,7 @@ body {
   border-radius: 5px;
   padding: 5px;
   font-style: italic;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(163, 233, 190, 0.05);
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -190,7 +190,7 @@ body {
   width: 100%;
   margin: 0 auto 15px auto;
   text-align: left;
-  font-size: 0.5em;
+  font-size: 0.7em;
   font-family: monospace;
   line-height: 1.1em;
   word-wrap: break-word;
@@ -198,8 +198,8 @@ body {
 }
 
 .reveal code {
-  font-family: "Source Code Pro Medium", monospace;
-  font-size: 1.2em;
+  font-family: monospace;
+  font-size: 1.1em;
   text-transform: none;
   font-feature-settings: "calt" 1;
 }
@@ -210,7 +210,7 @@ body {
   border-radius: 10px;
   display: block;
   padding: 1px;
-  overflow: hidden;
+  overflow: auto;
   word-wrap: normal;
   width: 98% !important;
   margin: 1px auto !important;
@@ -228,7 +228,7 @@ body {
   border-radius: 15px;
   opacity: 0.90 !important;
 */
-  font-size: 45% !important;
+  font-size: 55% !important;
 }
 
 .reveal table {
