@@ -165,15 +165,12 @@ grass76 $HOME/grassdata/nc_spm_08_grass7/modis_lst --gui
 
 ---
 
-@snap[north span-100]
-<h3>Operations with temporal algebra</h3>
-@snapend
+### Operations with temporal algebra
 
-@snap[south list-content-verbose span-100]
 **[t.rast.algebra](https://grass.osgeo.org/grass76/manuals/t.rast.algebra.html)**
 <br>
 @ul[](false)
-- Performs a wide range of temporal and spatial map algebra operations based on map's temporal topology 
+- Performs a wide range of temporal and spatial map algebra operations based on map's spatial and temporal topology 
 @ul[](false)
   - Temporal operators: union, intersection, etc.
   - Temporal functions: *start_time()*, *start_doy()*, etc.
@@ -183,7 +180,6 @@ grass76 $HOME/grassdata/nc_spm_08_grass7/modis_lst --gui
 @ulend
 @ulend
 **@size[30px](they can be combined in complex expressions!!)** @fa[bomb] 
-@snapend
 
 +++?code=code/05_temporal_code.sh&lang=bash&title=From K*50 to Celsius using the temporal calculator
 
