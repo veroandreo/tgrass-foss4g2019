@@ -6,16 +6,11 @@
 <h2>Spatio-temporal data processing & visualization in @color[green](GRASS GIS)</h2>
 @snapend
 
+<!---
 @snap[south message-box-white]
 <br>Dra. Verónica Andreo<br>CONICET - INMeT<br><br>Instituto Gulich. Córdoba, 2019<br>
 @snapend
-
----
-
-### Who are we?
-
-
-put pics and affil
+--->
 
 ---
 

@@ -13,6 +13,12 @@
 ---
 @title[About the trainer]
 
+### Who are we?
+
+
+put pics and affil
+
+<!---
 @snap[west]
 @css[bio-about](Lic. y Dra. Cs. Biológicas<br>Mgter. en Aplicaciones Espaciales de Alerta y<br>Respuesta Temprana a Emergencias<br>Aplicaciones de RS & GIS en Ecología<br><br><i>Keywords:</i> RS, GIS, Time series, SDM,<br>Disease Ecology, Rodents, Hantavirus)
 <br><br>
@@ -26,6 +32,7 @@
 <br><br>
 @css[bio-byline](@fa[gitlab pad-fa] veroandreo @fa[twitter pad-fa] @VeronicaAndreo<br>@fa[envelope pad-fa] veroandreo@gmail.com)
 @snapend
+--->
 
 ---?image=assets/img/grass_template.png&position=bottom&size=100% 30%
 
@@ -58,7 +65,7 @@ A bit of (geek) GRASS GIS history...
 
 <iframe width="560" height="315" scrolling="no" src="//av.tib.eu/player/12963" frameborder="0" allowfullscreen></iframe>
 
-+++?color=linear-gradient(90deg, green 50%, white 50%)
++++?color=linear-gradient(90deg, #8EA33B 50%, white 50%)
 @title[Advantages and Disadvantages]
 
 @snap[west text-white span-50]
@@ -83,7 +90,7 @@ Disadvantages
 @ulend
 @snapend
 
-+++?color=linear-gradient(90deg, green 50%, white 50%)
++++?color=linear-gradient(90deg, #8EA33B 50%, white 50%)
 @title[When to use and not to use GRASS]
 
 @snap[west text-white span-50]
