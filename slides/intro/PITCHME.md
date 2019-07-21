@@ -162,11 +162,11 @@ When GRASS GIS is started, it connects to the Database, Location and Mapset spec
 +++?color=linear-gradient(90deg, #8EA33B 50%, white 50%)
 @title[Data types in GRASS GIS]
 
-@snap[west split-screen-heading text-white span-45]
+@snap[west split-screen-heading text-white span-50]
 Data types in GRASS GIS
 @snapend
 
-@snap[east text-green span-55]
+@snap[east text-green span-50]
 @ul[split-screen-list](false)
 - [Raster](https://grass.osgeo.org/grass76/manuals/rasterintro.html) (including [satellite imagery](https://grass.osgeo.org/grass76/manuals/imageryintro.html))
 - [3D raster or voxel](https://grass.osgeo.org/grass76/manuals/raster3dintro.html)
