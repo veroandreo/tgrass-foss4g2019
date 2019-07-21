@@ -188,9 +188,9 @@ body {
   display: block;
   position: relative;
   width: 100%;
-  margin: 0 auto 15px auto;
+  margin: 0px;
   text-align: left;
-  font-size: 0.6em;
+  font-size: 0.5em;
   font-family: monospace;
   line-height: 1.1em;
   word-wrap: break-word;
@@ -200,7 +200,6 @@ body {
 .reveal code {
   font-family: monospace;
   font-size: 0.9em;
-  text-transform: none;
   font-feature-settings: "calt" 1;
 }
 
@@ -212,11 +211,6 @@ body {
   padding: 1px;
   overflow: auto;
   word-wrap: normal;
-  width: 98% !important;
-  margin: 1px auto !important;
-}
-
-.reveal pre code {
   max-height: 40vh !important;
 }
 
@@ -228,7 +222,7 @@ body {
   border-radius: 15px;
   opacity: 0.90 !important;
 */
-  font-size: 55% !important;
+  font-size: 65% !important;
 }
 
 .reveal table {
