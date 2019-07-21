@@ -159,7 +159,7 @@ When GRASS GIS is started, it connects to the Database, Location and Mapset spec
  - The GRASS DATABASE can be @color[#8EA33B](*local or remote*), and @color[#8EA33B](*special permissions*) can be set to specific mapsets in a LOCATION.
  - All data in a LOCATION have necessarily the @color[#8EA33B](same CRS).
 
-+++?color=linear-gradient(90deg, #8EA33B 45%, white 55%)
++++?color=linear-gradient(90deg, #8EA33B 50%, white 50%)
 @title[Data types in GRASS GIS]
 
 @snap[west split-screen-heading text-white span-45]
