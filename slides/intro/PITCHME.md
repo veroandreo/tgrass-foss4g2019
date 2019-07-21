@@ -1,9 +1,9 @@
----?image=assets/template/img/grass.png&position=bottom&size=100% 30%
+---?image=assets/img/grass_template.png&position=bottom&size=100% 30%
 @title[Front page]
 
 @snap[north span-100]
 <br>
-<h2>Procesamiento y análisis de series temporales en @color[green](GRASS GIS)</h2>
+<h2>Spatio-temporal data processing & visualization in @color[green](GRASS GIS)</h2>
 @snapend
 
 @snap[south message-box-white]
@@ -27,7 +27,7 @@
 @css[bio-byline](@fa[gitlab pad-fa] veroandreo @fa[twitter pad-fa] @VeronicaAndreo<br>@fa[envelope pad-fa] veroandreo@gmail.com)
 @snapend
 
----?image=assets/template/img/grass.png&position=bottom&size=100% 30%
+---?image=assets/img/grass_template.png&position=bottom&size=100% 30%
 
 # Introduction to GRASS GIS
 
@@ -48,7 +48,7 @@
 <br>
 @snapend
 
-+++?image=assets/template/img/grass.png&position=bottom&size=100% 30%
++++?image=assets/img/grass_template.png&position=bottom&size=100% 30%
 @title[GRASS GIS history 2]
 
 @snap[north span-90]
@@ -58,7 +58,7 @@ A bit of (geek) GRASS GIS history...
 
 <iframe width="560" height="315" scrolling="no" src="//av.tib.eu/player/12963" frameborder="0" allowfullscreen></iframe>
 
-+++?image=assets/template/img/bg/green.jpg&position=left&size=50% 100%
++++?color=linear-gradient(90deg, green 50%, white 50%)
 @title[Advantages and Disadvantages]
 
 @snap[west text-white span-50]
@@ -83,7 +83,7 @@ Disadvantages
 @ulend
 @snapend
 
-+++?image=assets/template/img/bg/green.jpg&position=left&size=50% 100%
++++?color=linear-gradient(90deg, green 50%, white 50%)
 @title[When to use and not to use GRASS]
 
 @snap[west text-white span-50]
@@ -152,7 +152,7 @@ When GRASS GIS is started, it connects to the Database, Location and Mapset spec
  - The GRASS DATABASE can be @color[#8EA33B](*local or remote*), and @color[#8EA33B](*special permissions*) can be set to specific mapsets in a LOCATION.
  - All data in a LOCATION have necessarily the @color[#8EA33B](same CRS).
 
-+++?image=assets/template/img/bg/green.jpg&position=left&size=46% 100%
++++?color=linear-gradient(90deg, green 45%, white 55%)
 @title[Data types in GRASS GIS]
 
 @snap[west split-screen-heading text-white span-45]
@@ -247,7 +247,7 @@ always considered in their original extent.
 
 ---
 
-### MASK
+## MASK
 
 A raster map named MASK can be created to mask out areas: all cells that
 are NULL in the MASK map will be ignored (also all areas outside the 
@@ -266,7 +266,7 @@ Vector maps can be also used as masks
 
 +++
 
-#### MASK examples
+### MASK examples
 
 
 ```bash
@@ -285,7 +285,7 @@ r.mapcalc expression="MASK = if(elevation < 100, 1, null())"
 # remove mask
 r.mask -r
 ```
-
+<br>
 @size[22px](**Note**: A mask is only actually applied when reading a GRASS raster map, i.e., when used as input in a module.)
 
 ---
@@ -294,7 +294,7 @@ r.mask -r
 
 GRASS GIS offers different interfaces for the interaction between user and software. 
 
-#### Let's see them!
+### Let's see them!
 
 +++
 
@@ -360,7 +360,7 @@ The simplest way to execute a Python script is through the *Simple Python editor
 
 +++?code=code/01_intro_grass_session_vector_import.py&lang=python
 
-@snap[north-east template-note text-gray]
+@snap[north span-100]
 Using GRASS GIS through **grass-session** Python library
 @snapend
 
@@ -369,6 +369,7 @@ Using GRASS GIS through **grass-session** Python library
 @[50-66](Run modules)
 @[68-69](Clean and close)
 
+<br>
 @size[18px](Credits: Pietro Zambelli. See <a href="https://github.com/zarch/grass-session">grass-session GitHub</a> for further details.)
 
 +++
@@ -547,7 +548,7 @@ GRASS GIS and R can be used together in two ways:
 
 ---
 
-# **HELP!!!**
+## HELP!!!
 
 +++
 
@@ -594,7 +595,7 @@ GRASS GIS and R can be used together in two ways:
 <br><br><br>
 Let's move on to: 
 <br>
-[TGRASS presentation]()
+[TGRASS presentation](https://gitpitch.com/veroandreo/tgrass-foss4g2019/master?p=slides/tgrass)
 @snapend
 
 @snap[south span-50]

@@ -22,7 +22,7 @@ put pics and affil
 @color[#8EA33B](GRASS GIS) is **the first Open Source GIS** that incorporated
 capabilities to **manage, analyze, process and visualize spatio-temporal
 data**, as well as the temporal relationships among time series.
-
+<br>
 @fa[layer-group fa-3x text-green]
 
 +++
@@ -50,7 +50,7 @@ STDS in each mapset.
 - Space time raster datasets (**ST@color[#8EA33B](R)DS**)
 - Space time 3D raster datasets (**ST@color[#8EA33B](R3)DS**)
 - Space time vector datasets (**ST@color[#8EA33B](V)DS**)
-
+<br>
 @fa[layer-group fa-3x text-green]
 
 +++
@@ -104,7 +104,6 @@ STDS in each mapset.
 <br>
 - [modis_lst mapset (2Mb)](https://gitlab.com/veroandreo/grass-gis-geostat-2018/blob/master/data/modis_lst.zip): download and unzip within `$HOME/grassdata/nc_spm_08_grass7`
 - [GRASS code](https://gitlab.com/veroandreo/grass-gis-conae/raw/master/code/05_temporal_code.sh?inline=false)
-- [R code](https://gitlab.com/veroandreo/grass-gis-conae/raw/master/code/05_temporal_code.r?inline=false)
 
 ... and start GRASS GIS
 
@@ -177,7 +176,7 @@ grass76 $HOME/grassdata/nc_spm_08_grass7/modis_lst --gui
 
 @snap[south list-content-verbose span-100]
 **[t.rast.algebra](https://grass.osgeo.org/grass76/manuals/t.rast.algebra.html)**
-<br><br>
+<br>
 @ul[](false)
 - Performs a wide range of temporal and spatial map algebra operations based on map's temporal topology 
 @ul[](false)
@@ -210,7 +209,7 @@ grass76 $HOME/grassdata/nc_spm_08_grass7/modis_lst --gui
 
 ---
 
-#### Lists and selections
+### Lists and selections
 
 - **[t.list](https://grass.osgeo.org/grass76/manuals/t.list.html)** for listing STDS and maps registered in the temporal database,
 - **[t.rast.list](https://grass.osgeo.org/grass76/manuals/t.rast.list.html)** for maps in raster time series, and
@@ -318,6 +317,8 @@ id, name, layer, creator, mapset, temporal_type, creation_time, start_time, end_
 ```bash
 g.gui.timeline inputs=LST_Day_monthly_celsius,LST_Day_mean_3month
 ```
+
+put the img here
 --->
 
 +++?code=code/05_temporal_code.sh&lang=bash&title=Display seasonal LST using frames in wx monitor
@@ -345,13 +346,15 @@ g.gui.timeline inputs=LST_Day_monthly_celsius,LST_Day_mean_3month
 +++
 
 One solution could be...
-<br>
+<br><br>
 ```bash
-t.rast.aggregate input=LST_Day_monthly_celsius output=month_max_LST_per_year \
+t.rast.aggregate input=LST_Day_monthly_celsius \
+  output=month_max_LST_per_year \
   basename=month_max_LST suffix=gran \
   method=max_raster granularity="1 year" 
 
-t.rast.series input=month_max_LST_per_year output=slope_month_max_LST \
+t.rast.series input=month_max_LST_per_year \
+  output=slope_month_max_LST \
   method=slope
 ```
 
@@ -439,7 +442,7 @@ We need:
 
 ---
 
-## QUESTIONS?
+### QUESTIONS?
 
 <img src="assets/img/gummy-question.png" width="45%">
 
