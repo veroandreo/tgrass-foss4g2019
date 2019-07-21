@@ -199,7 +199,7 @@ body {
 
 .reveal code {
   font-family: monospace;
-  font-size: 0.9em;
+  font-size: 0.95em;
   font-feature-settings: "calt" 1;
 }
 
@@ -222,7 +222,7 @@ body {
   border-radius: 15px;
   opacity: 0.90 !important;
 */
-  font-size: 65% !important;
+  font-size: 60% !important;
 }
 
 .reveal table {
