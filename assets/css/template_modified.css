@@ -48,8 +48,9 @@ body {
 .reveal h1,
 .reveal h2 {
   color: #1C1C1C;
-  font-family: "Fira Sans", sans-serif;
-  text-transform: bold;
+  font-family: "Fira Sans";
+  font-weight: bold !important;
+  text-transform: uppercase;
   margin: 0 0 15px 0;
   line-height: 1.2;
   text-shadow: none;
@@ -62,7 +63,7 @@ body {
 .reveal h5,
 .reveal h6 {
   color: #111111;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Sans";
   text-transform: none;
   margin: 0 0 15px 0;
   line-height: 1.1;
@@ -80,11 +81,11 @@ body {
 }
 
 .reveal h3 {
-  font-size: 1.55em;
+  font-size: 1.5em;
 }
 
 .reveal h4 {
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 .reveal h1 {
@@ -198,7 +199,7 @@ body {
 
 .reveal code {
   font-family: "Source Code Pro Medium", monospace;
-  font-size: 1.1em;
+  font-size: 1.2em;
   text-transform: none;
   font-feature-settings: "calt" 1;
 }
@@ -227,7 +228,7 @@ body {
   border-radius: 15px;
   opacity: 0.90 !important;
 */
-  font-size: 40% !important;
+  font-size: 45% !important;
 }
 
 .reveal table {
