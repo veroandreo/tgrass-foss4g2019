@@ -82,7 +82,7 @@ A bit of (geek) GRASS GIS history...
 +++?color=linear-gradient(90deg, #8EA33B 50%, white 50%)
 @title[When to use and not to use GRASS]
 
-@snap[north-west span-50 h3-white]
+@snap[north-west span-50 h3-white text-center]
 ### When to use GRASS GIS?
 @snapend
 
@@ -96,7 +96,7 @@ A bit of (geek) GRASS GIS history...
 @ulend
 @snapend
 
-@snap[north-east span-50 h3-green]
+@snap[north-east span-50 h3-green text-center]
 ### When to use rather something else?
 @snapend
 
