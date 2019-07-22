@@ -397,7 +397,7 @@ div.slide-number a {
 }
 
 .bio img {
-    width: 80%;
+    width: 70%;
     border-radius: 50%;
 }
 
@@ -409,12 +409,12 @@ div.slide-number a {
 }
 
 .bio-byline {
-  color: #009000;
+  color: #8EA33B;
   font-size: 0.6em !important;
 }
 
 .bio-tagline {
-  color: #009000;
+  color: #8EA33B;
   font-size: 0.8em !important;
   font-style: italic !important;
 }
