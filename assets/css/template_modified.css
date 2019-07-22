@@ -73,7 +73,7 @@ body {
 }
 
 .reveal h1 {
-  font-size: 2.7em;
+  font-size: 2.9em;
 }
 
 .reveal h2 {
@@ -283,7 +283,7 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #009000;
+  color: #8EA33B;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
@@ -291,7 +291,7 @@ body {
 }
 
 .reveal a:hover {
-  color: #01b401;
+  color: rgb(171, 196, 71);
   text-shadow: none;
   border: none;
 }
@@ -327,7 +327,7 @@ body {
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: #f6003c;
+  color: #f6580e;
 }
 
 .gp-menu-bars {
@@ -354,7 +354,7 @@ div.slide-number a {
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
-  color: #f6003c;
+  color: #F6580E;
   background: rgba(0, 0, 0, 0.2);
 }
 
