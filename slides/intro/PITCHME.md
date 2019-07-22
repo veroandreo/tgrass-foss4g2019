@@ -53,23 +53,25 @@ A bit of (geek) GRASS GIS history...
 +++?color=linear-gradient(90deg, #8EA33B 50%, white 50%)
 @title[Advantages and Disadvantages]
 
-@snap[west text-white span-50 text-left]
+@snap[north-west span-50 h3-white]
 ### Advantages
-<br><br>
+@snapend
+
+@snap[west text-white span-50]
 @ul(false)
 - open source, you can use, modify, improve, share
 - strong user community, commercial support
-- large amount of tools for 2D/3D raster/vector, topology, imagery, spatio-temporal data
+- large amount of tools
 - both GUI and CLI (easy for scripting) interface
 - Python API and libraries
 @ulend
 @snapend
 
-@snap[north-east span-50 text-green]
+@snap[north-east span-50 h3-green]
 ### Disadvantages
 @snapend
 
-@snap[east text-green span-50 text-right]
+@snap[east text-green span-50]
 @ul(false)
 - complicated startup for newcomers
 - native format (requires importing data, possibility of linking external formats)
@@ -80,9 +82,11 @@ A bit of (geek) GRASS GIS history...
 +++?color=linear-gradient(90deg, #8EA33B 50%, white 50%)
 @title[When to use and not to use GRASS]
 
+@snap[north-west span-50 h3-white]
+### When to use GRASS GIS?
+@snapend
+
 @snap[west text-white span-50]
-When to use GRASS GIS?
-<br><br>
 @ul(false)
 - doing (heavy) geospatial data analysis
 - working with topological vector data
@@ -92,9 +96,11 @@ When to use GRASS GIS?
 @ulend
 @snapend
 
+@snap[north-east span-50 h3-green]
+### When to use rather something else?
+@snapend
+
 @snap[east text-green span-50]
-When to use rather something else?
-<br><br>
 @ul(false)
 - want to vizualize geodata in easy and quick way (use QGIS instead)
 - scared of location and mapsets @fa[smile-wink]
