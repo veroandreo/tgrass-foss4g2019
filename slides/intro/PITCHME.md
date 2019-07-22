@@ -133,11 +133,13 @@ Well, except for this...
 @title[GRASS DB, Location and Mapsets]
 
 When GRASS GIS is started, it connects to the Database, Location and Mapset specified by the user
+
 <br>
 <img src="assets/img/grass_database.png" width="65%">
+
 <br>
 @size[24px](<a href="https://grass.osgeo.org/grass76/manuals/grass_database.html">GRASS database</a>)
-<br><br>
+<br>
 
 +++
 
@@ -157,8 +159,8 @@ When GRASS GIS is started, it connects to the Database, Location and Mapset spec
 ---?color=linear-gradient(90deg, #8EA33B 50%, white 50%)
 @title[Data types in GRASS GIS]
 
-@snap[west text-white span-50]
-### Data types in GRASS GIS
+@snap[west h4-white span-50]
+#### Data types in GRASS GIS
 @snapend
 
 @snap[east text-green span-45 text-left]
@@ -252,18 +254,17 @@ always considered in their original extent.
 
 ## MASK
 
-A raster map named MASK can be created to mask out areas: all cells that
-are NULL in the MASK map will be ignored (also all areas outside the 
-computational region).
-
-<br>
-Masks are set with [r.mask](https://grass.osgeo.org/grass76/manuals/r.mask.html) or creating a raster map called *MASK*. 
+- A raster map named MASK can be created to mask out areas
+- All cells that are *NULL* in the MASK map will be ignored (also all areas outside the computational region).
+- Masks are set with [r.mask](https://grass.osgeo.org/grass76/manuals/r.mask.html) or creating a raster map called **MASK**. 
 
 +++
 
 Vector maps can be also used as masks
 
+<br>
 ![MASK](assets/img/masks.png)
+
 <br>
 @size[22px](a- Elevation raster and lakes vector maps. b- Only the raster data inside the masked area are used for further analysis. c- Inverse mask.)
 
@@ -288,6 +289,7 @@ r.mapcalc expression="MASK = if(elevation < 100, 1, null())"
 # remove mask
 r.mask -r
 ```
+
 <br>
 @size[22px](**Note**: A mask is only actually applied when reading a GRASS raster map, i.e., when used as input in a module.)
 
@@ -299,6 +301,8 @@ GRASS GIS offers different interfaces for the interaction between user and softw
 
 <br>
 ### Let's see them!
+
+@fa[angle-double-down fa-3x green]
 
 +++
 
@@ -336,7 +340,7 @@ The GUI's simplified command line offers a *Log file* button to save the history
 
 ### Python 
 
-The simplest way to execute a Python script is through the @color[#8EA33B](*Simple Python editor*)
+The simplest way to execute a Python script is through the @color[#8EA33B](Simple Python editor)
 
 <img src="assets/img/simple_python_editor.png" width="80%">
 
@@ -483,7 +487,7 @@ GRASS GIS and R can be used together in two ways:
  ## Subset a raster map
  # 1. Check region settings
  g.region -p
- # 2. Change region (here: relative to current N and W values, expanding values in map units)
+ # 2. Change region relative to current N and W values
  g.region n=n-3000 w=w+4000
  # 3. Subset map
  r.mapcalc "new_elev = elevation"
@@ -517,10 +521,10 @@ GRASS GIS and R can be used together in two ways:
 
 ```bash
  # running a module
- grass76 /path/to/grassdata/nc_spm_08_grass7/PERMANENT/ --exec r.univar map=elevation
+ grass76 $HOME/grassdata/nc_spm_08_grass7/PERMANENT/ --exec r.info map=elevation
  
  # running a script
- grass76 /path/to/grassdata/nc_spm_08_grass7/PERMANENT/ --exec sh test.sh
+ grass76 $HOME/grassdata/nc_spm_08_grass7/PERMANENT/ --exec sh test.sh
 
  ## test.sh might be as simple as:
  
