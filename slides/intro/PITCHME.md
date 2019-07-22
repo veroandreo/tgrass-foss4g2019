@@ -9,7 +9,9 @@
 ---
 @title[About the trainers]
 
+@snap[north span-100]
 ### Who are we?
+@snapend
 
 @snap[west]
 ![myphoto](assets/img/vero_round_small.png)
@@ -52,7 +54,7 @@ A bit of (geek) GRASS GIS history...
 @title[Advantages and Disadvantages]
 
 @snap[west text-white span-50 text-left]
-Advantages
+### Advantages
 <br><br>
 @ul(false)
 - open source, you can use, modify, improve, share
@@ -63,9 +65,11 @@ Advantages
 @ulend
 @snapend
 
+@snap[north-east span-50 text-green]
+### Disadvantages
+@snapend
+
 @snap[east text-green span-50 text-right]
-Disadvantages
-<br><br>
 @ul(false)
 - complicated startup for newcomers
 - native format (requires importing data, possibility of linking external formats)
@@ -76,7 +80,7 @@ Disadvantages
 +++?color=linear-gradient(90deg, #8EA33B 50%, white 50%)
 @title[When to use and not to use GRASS]
 
-@snap[west text-white span-50 text-left]
+@snap[west text-white span-50]
 When to use GRASS GIS?
 <br><br>
 @ul(false)
@@ -88,10 +92,10 @@ When to use GRASS GIS?
 @ulend
 @snapend
 
-@snap[east text-green span-50 text-right]
+@snap[east text-green span-50]
 When to use rather something else?
 <br><br>
-@ul[split-screen-list](false)
+@ul(false)
 - want to vizualize geodata in easy and quick way (use QGIS instead)
 - scared of location and mapsets @fa[smile-wink]
 @ulend
@@ -106,7 +110,7 @@ When to use rather something else?
 @snap[midpoint]
 Well, except for this...
 <br>
-@img[span-50](assets/img/start_screen1.png)
+@img[span-100](assets/img/start_screen1.png)
 @snapend
 
 ---
@@ -123,9 +127,9 @@ Well, except for this...
 @title[GRASS DB, Location and Mapsets]
 
 When GRASS GIS is started, it connects to the Database, Location and Mapset specified by the user
-
+<br>
 <img src="assets/img/grass_database.png" width="65%">
-
+<br>
 @size[24px](<a href="https://grass.osgeo.org/grass76/manuals/grass_database.html">GRASS database</a>)
 <br><br>
 
@@ -144,11 +148,11 @@ When GRASS GIS is started, it connects to the Database, Location and Mapset spec
  - The GRASS DATABASE can be @color[#8EA33B](*local or remote*), and @color[#8EA33B](*special permissions*) can be set to specific mapsets in a LOCATION.
  - All data in a LOCATION have necessarily the @color[#8EA33B](same CRS).
 
-+++?color=linear-gradient(90deg, #8EA33B 50%, white 50%)
+---?color=linear-gradient(90deg, #8EA33B 50%, white 50%)
 @title[Data types in GRASS GIS]
 
 @snap[west text-white span-50]
-Data types in GRASS GIS
+### Data types in GRASS GIS
 @snapend
 
 @snap[east text-green span-45 text-left]
@@ -192,7 +196,7 @@ Plugins or **Add-ons** can be installed from
 a centralized [OSGeo repository](https://grass.osgeo.org/grass7/manuals/addons/) 
 or from github (or similar repositories) using 
 [g.extension](https://grass.osgeo.org/grass76/manuals/g.extension.html) command.
-<br>
+<br><br>
 ```bash
  # install extension from GRASS GIS Add-on repository
  g.extension extension=r.hants
@@ -235,6 +239,7 @@ always considered in their original extent.
   - Fine-tune the settings of a certain module
   - Run different processes in different areas
 
+<br>
 @size[18px](More details at the [Computational region wiki](https://grasswiki.osgeo.org/wiki/Computational_region))
 
 ---
@@ -286,6 +291,7 @@ r.mask -r
 
 GRASS GIS offers different interfaces for the interaction between user and software. 
 
+<br>
 ### Let's see them!
 
 +++
@@ -324,7 +330,7 @@ The GUI's simplified command line offers a *Log file* button to save the history
 
 ### Python 
 
-The simplest way to execute a Python script is through the *Simple Python editor*
+The simplest way to execute a Python script is through the @color[#8EA33B](*Simple Python editor*)
 
 <img src="assets/img/simple_python_editor.png" width="80%">
 
@@ -352,7 +358,9 @@ The simplest way to execute a Python script is through the *Simple Python editor
 
 +++?code=code/01_intro_grass_session_vector_import.py&lang=python
 
+@snap[north span-100]
 ... or use GRASS GIS through **grass-session** Python library
+@snapend
 
 @[17-28](Import libraries)
 @[36-48](Create Location and Mapset)
