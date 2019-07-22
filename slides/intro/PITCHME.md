@@ -6,37 +6,20 @@
 <h2>Spatio-temporal data processing & visualization in @color[green](GRASS GIS)</h2>
 @snapend
 
-@snap[south message-box-white]
-<br>Dra. Veronica Andreo<br>CONICET - INMeT<br><br>Instituto Gulich. Córdoba, 2019<br>
-@snapend
-
 ---
-@title[About the trainer]
+@title[About the trainers]
 
 ### Who are we?
 
-
-put pics and affil
-
-<!---
 @snap[west]
-@css[bio-about](Lic. y Dra. Cs. Biológicas<br>Mgter. en Aplicaciones Espaciales de Alerta y<br>Respuesta Temprana a Emergencias<br>Aplicaciones de RS & GIS en Ecología<br><br><i>Keywords:</i> RS, GIS, Time series, SDM,<br>Disease Ecology, Rodents, Hantavirus)
-<br><br>
-@css[bio-about](<a href="https://grass.osgeo.org/">GRASS GIS</a> Dev Team<br><a href="https://www.osgeo.org/">OSGeo</a> Charter member<br>FOSS4G enthusiast and advocate)
-@snapend
-
-@snap[east]
-@css[bio-headline](About me)
-<br><br>
 ![myphoto](assets/img/vero_round_small.png)
 <br><br>
-@css[bio-byline](@fa[gitlab pad-fa] veroandreo @fa[twitter pad-fa] @VeronicaAndreo<br>@fa[envelope pad-fa] veroandreo@gmail.com)
+@css[bio-byline](@fa[github pad-fa] veroandreo @fa[twitter pad-fa] @VeronicaAndreo<br>@fa[envelope pad-fa] veroandreo@gmail.com)
 @snapend
---->
 
 ---?image=assets/img/grass_template.png&position=bottom&size=100% 30%
 
-# Introduction to GRASS GIS
+# Brief intro to GRASS GIS
 
 ---
 @title[GRASS GIS history 1]
@@ -68,10 +51,10 @@ A bit of (geek) GRASS GIS history...
 +++?color=linear-gradient(90deg, #8EA33B 50%, white 50%)
 @title[Advantages and Disadvantages]
 
-@snap[west text-white span-50]
+@snap[west text-white span-50 text-left]
 Advantages
 <br><br>
-@ul[split-screen-list](false)
+@ul(false)
 - open source, you can use, modify, improve, share
 - strong user community, commercial support
 - large amount of tools for 2D/3D raster/vector, topology, imagery, spatio-temporal data
@@ -80,23 +63,23 @@ Advantages
 @ulend
 @snapend
 
-@snap[east text-green span-50]
+@snap[east text-green span-50 text-right]
 Disadvantages
 <br><br>
-@ul[split-screen-list](false)
+@ul(false)
 - complicated startup for newcomers
-- native format (requires importing data, be aware of the possibility of linking external formats)
-- vector topology (confusing for GIS beginners, sometimes tricky to import broken GIS data)
+- native format (requires importing data, possibility of linking external formats)
+- vector topology (confusing for beginners, sometimes tricky to import broken GIS data)
 @ulend
 @snapend
 
 +++?color=linear-gradient(90deg, #8EA33B 50%, white 50%)
 @title[When to use and not to use GRASS]
 
-@snap[west text-white span-50]
+@snap[west text-white span-50 text-left]
 When to use GRASS GIS?
 <br><br>
-@ul[split-screen-list](false)
+@ul(false)
 - doing (heavy) geospatial data analysis
 - working with topological vector data
 - analysing space-time datasets
@@ -105,7 +88,7 @@ When to use GRASS GIS?
 @ulend
 @snapend
 
-@snap[east text-green span-50]
+@snap[east text-green span-50 text-right]
 When to use rather something else?
 <br><br>
 @ul[split-screen-list](false)
@@ -120,9 +103,11 @@ When to use rather something else?
 
 ---
 
+@snap[midpoint]
 Well, except for this...
-
-<img src="assets/img/start_screen1.png" width="50%">
+<br>
+@img[span-50](assets/img/start_screen1.png)
+@snapend
 
 ---
 
@@ -162,11 +147,11 @@ When GRASS GIS is started, it connects to the Database, Location and Mapset spec
 +++?color=linear-gradient(90deg, #8EA33B 50%, white 50%)
 @title[Data types in GRASS GIS]
 
-@snap[west split-screen-heading text-white span-50]
+@snap[west text-white span-50]
 Data types in GRASS GIS
 @snapend
 
-@snap[east text-green span-50]
+@snap[east text-green span-45 text-left]
 @ul[split-screen-list](false)
 - [Raster](https://grass.osgeo.org/grass76/manuals/rasterintro.html) (including [satellite imagery](https://grass.osgeo.org/grass76/manuals/imageryintro.html))
 - [3D raster or voxel](https://grass.osgeo.org/grass76/manuals/raster3dintro.html)
@@ -207,14 +192,14 @@ Plugins or **Add-ons** can be installed from
 a centralized [OSGeo repository](https://grass.osgeo.org/grass7/manuals/addons/) 
 or from github (or similar repositories) using 
 [g.extension](https://grass.osgeo.org/grass76/manuals/g.extension.html) command.
-
+<br>
 ```bash
  # install extension from GRASS GIS Add-on repository
  g.extension extension=r.hants
  
  # install extension from github repository
- g.extension extension=r.in.sos \
-   url=https://github.com/pesekon2/GRASS-GIS-SOS-tools/tree/master/sos/r.in.sos
+ g.extension extension=r3.slice \
+   url=https://github.com/petrasovaa/r3.slice
 ``` 
 
 ---
@@ -258,7 +243,7 @@ always considered in their original extent.
 
 A raster map named MASK can be created to mask out areas: all cells that
 are NULL in the MASK map will be ignored (also all areas outside the 
-computation region).
+computational region).
 
 <br>
 Masks are set with [r.mask](https://grass.osgeo.org/grass76/manuals/r.mask.html) or creating a raster map called *MASK*. 
@@ -367,9 +352,7 @@ The simplest way to execute a Python script is through the *Simple Python editor
 
 +++?code=code/01_intro_grass_session_vector_import.py&lang=python
 
-@snap[north span-100]
-Using GRASS GIS through **grass-session** Python library
-@snapend
+... or use GRASS GIS through **grass-session** Python library
 
 @[17-28](Import libraries)
 @[36-48](Create Location and Mapset)
@@ -440,7 +423,7 @@ GRASS GIS and R can be used together in two ways:
  # set computational region to e.g. 10m elevation model:
  g.region raster=elevation -p
  
- # Import with reprojection on the fly
+ # import with reprojection on the fly
  r.import input=n35_w079_1arc_v3.tif output=srtmv3_resamp10m \
   resample=bilinear extent=region resolution=region \
   title="SRTM V3 resampled to 10m resolution"
@@ -473,7 +456,8 @@ GRASS GIS and R can be used together in two ways:
 
   These modules remove maps from the GRASSDBASE, rename maps and copy
   maps either in the same mapset or from other mapset. 
-  
+
+<br>
 @css[message-box](Always perform these tasks from within GRASS)
 
 +++
@@ -494,26 +478,6 @@ GRASS GIS and R can be used together in two ways:
  d.mon wx0
  d.rast elevation
  d.rast new_elev
-``` 
-
-+++
-
-- [g.mapset](https://grass.osgeo.org/grass76/manuals/g.mapset.html)
-  and [g.mapsets](https://grass.osgeo.org/grass76/manuals/g.mapsets.html):
-  These modules allow to change mapset and add/remove mapsets from the
-  accessible mapsets list.
-
-```bash
- # print current mapset
- g.mapset -p
- # change to a different mapset
- g.mapset mapset=modis_lst
- # print mapsets in the search path
- g.mapsets -p
- # list available mapsets in the location
- g.mapsets -l
- # add mapset to the search path
- g.mapsets mapset=modis_lst operation=add
 ``` 
 
 +++
@@ -555,7 +519,7 @@ GRASS GIS and R can be used together in two ways:
 
 ---
 
-## HELP!!!
+# HELP!!!
 
 +++
 
