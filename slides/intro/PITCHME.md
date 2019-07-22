@@ -86,7 +86,7 @@ A bit of (geek) GRASS GIS history...
 ### When to use GRASS GIS?
 @snapend
 
-@snap[west text-white span-50]
+@snap[south-west text-white span-50]
 @ul(false)
 - doing (heavy) geospatial data analysis
 - working with topological vector data
