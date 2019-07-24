@@ -34,9 +34,9 @@ Université Libre de Bruxelles. Belgium.
 ### Who are we?
 @snapend
 
-@snap[west span-33]
-@img[about-team-pic span-50 text-center](assets/img/vero_round_small.png)
-
+@snap[west span-33 text-center]
+@img[about-team-pic span-50](assets/img/vero_round_small.png)
+<br>
 @css[bio-byline](@fa[github pad-fa] veroandreo)
 @snapend
 
