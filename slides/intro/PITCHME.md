@@ -8,20 +8,22 @@
 
 @snap[south message-box-white text-05 span-100]
 
-Verónica Andreo, Martin Landa, Ondřej Pešek, Markus Neteler, Luca Delucchi, Moritz Lennert
-<br>
-1 Instituto Nacional de Medicina Tropical (INMeT) - Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET). Puerto Iguazú, Argentina.
+@size[25px](Verónica Andreo, Martin Landa, Ondřej Pešek, Markus Neteler, Luca Delucchi & Moritz Lennert)
 
-2 Czech Technical University in Prague. Czech Republic.
+<br><br>
+Instituto Nacional de Medicina Tropical (INMeT) - Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET). Puerto Iguazú, Argentina. / 
 
-3 JRC - The Joint Research Centre. Ispra, Italy.
+2 Czech Technical University in Prague. Czech Republic. /
+ 
+3 JRC - The Joint Research Centre. Ispra, Italy. /
 
-4 mundialis GmbH & Co. KG. Bonn, Germany.
+4 mundialis GmbH & Co. KG. Bonn, Germany. /
 
-5 Fondazione Edmund Mach. San Michele all’Adige, Italy.
+5 Fondazione Edmund Mach. San Michele all’Adige, Italy. /
 
 6 Université Libre de Bruxelles. Belgium.
 
+<br><br>
 @size[30px](FOSS4G 2019, Bucharest)
 @snapend
 
