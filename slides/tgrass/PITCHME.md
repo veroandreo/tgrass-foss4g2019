@@ -90,7 +90,7 @@ STDS in each mapset.
 
 ---
 
-### @fa[download] get the data and the code @fa[download]
+### @fa[download text-green] get the data and the code @fa[download text-green]
 <br>
 - [modis_lst mapset (2Mb)](https://gitlab.com/veroandreo/grass-gis-geostat-2018/blob/master/data/modis_lst.zip): download and unzip within `$HOME/grassdata/nc_spm_08_grass7`
 - [GRASS code](https://gitlab.com/veroandreo/grass-gis-conae/raw/master/code/05_temporal_code.sh?inline=false)
