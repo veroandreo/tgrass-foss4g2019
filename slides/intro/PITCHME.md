@@ -11,15 +11,15 @@
 @size[25px](Verónica Andreo, Martin Landa, Ondřej Pešek, Markus Neteler, Luca Delucchi & Moritz Lennert)
 
 <br><br>
-Instituto Nacional de Medicina Tropical (INMeT) - Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET). Puerto Iguazú, Argentina. / 
+Instituto Nacional de Medicina Tropical (INMeT) - Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET). Puerto Iguazú, Argentina / 
 
-Czech Technical University in Prague. Czech Republic. /
+Czech Technical University in Prague. Czech Republic /
  
-JRC - The Joint Research Centre. Ispra, Italy. /
+JRC - The Joint Research Centre. Ispra, Italy /
 
-mundialis GmbH & Co. KG. Bonn, Germany. /
+mundialis GmbH & Co. KG. Bonn, Germany /
 
-Fondazione Edmund Mach. San Michele all’Adige, Italy. /
+Fondazione Edmund Mach. San Michele all’Adige, Italy /
 
 Université Libre de Bruxelles. Belgium.
 
@@ -36,8 +36,7 @@ Université Libre de Bruxelles. Belgium.
 
 @snap[west span-33]
 @img[about-team-pic span-60](assets/img/vero_round_small.png)
-<br><br>
-@css[bio-byline](@fa[github pad-fa] veroandreo<br>@fa[twitter pad-fa] @VeronicaAndreo)
+@css[bio-byline](@fa[github pad-fa] veroandreo)
 @snapend
 
 ---?image=assets/img/grass_template.png&position=bottom&size=100% 30%
