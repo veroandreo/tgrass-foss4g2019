@@ -442,6 +442,12 @@ div.slide-number a {
   clip-path: circle(35% at 50% 50%);
 }
 
+/* round clip for img */
+.reveal img.clip-img {
+  clip-path: circle(30% at 50% 50%);
+  -webkit-clip-path: circle(30% at 50% 50%);
+}
+
 .about-team-pic-center img {
   width: 70%;
 }

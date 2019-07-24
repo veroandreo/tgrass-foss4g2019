@@ -13,15 +13,15 @@
 <br><br>
 Instituto Nacional de Medicina Tropical (INMeT) - Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET). Puerto Iguazú, Argentina. / 
 
-2 Czech Technical University in Prague. Czech Republic. /
+Czech Technical University in Prague. Czech Republic. /
  
-3 JRC - The Joint Research Centre. Ispra, Italy. /
+JRC - The Joint Research Centre. Ispra, Italy. /
 
-4 mundialis GmbH & Co. KG. Bonn, Germany. /
+mundialis GmbH & Co. KG. Bonn, Germany. /
 
-5 Fondazione Edmund Mach. San Michele all’Adige, Italy. /
+Fondazione Edmund Mach. San Michele all’Adige, Italy. /
 
-6 Université Libre de Bruxelles. Belgium.
+Université Libre de Bruxelles. Belgium.
 
 <br><br>
 @size[30px](FOSS4G 2019, Bucharest)
@@ -34,8 +34,8 @@ Instituto Nacional de Medicina Tropical (INMeT) - Consejo Nacional de Investigac
 ### Who are we?
 @snapend
 
-@snap[north-west span-33]
-@img[span-25](assets/img/vero_round_small.png)
+@snap[west span-33]
+@img[about-team-pic span-80](assets/img/vero_round_small.png)
 <br><br>
 @css[bio-byline](@fa[github pad-fa] veroandreo<br>@fa[twitter pad-fa] @VeronicaAndreo)
 @snapend
@@ -137,7 +137,7 @@ A bit of (geek) GRASS GIS history...
 @snap[midpoint span-100]
 Well, except for this...
 <br>
-@img[span-100](assets/img/start_screen1.png)
+@img[span-55](assets/img/start_screen1.png)
 @snapend
 
 ---
@@ -213,7 +213,7 @@ More than [500 modules](https://grass.osgeo.org/grass76/manuals/full_index.html)
 
 +++
 
-<img src="assets/img/module_tree_and_search.png" width="70%">
+<img src="assets/img/module_tree_and_search.png" width="75%">
 <br>
 Module tree and module search engine
 
@@ -429,8 +429,8 @@ There are two ways to use GRASS GIS functionalities within QGIS:
 
 GRASS GIS and R can be used together in two ways:
 <br><br>
-- Using [R within a GRASS GIS session](https://grasswiki.osgeo.org/wiki/R_statistics/rgrass7#R_within_GRASS),
-- Using [GRASS GIS within an R session](https://grasswiki.osgeo.org/wiki/R_statistics/rgrass7#GRASS_within_R),
+- Using [R within a GRASS GIS session](https://grasswiki.osgeo.org/wiki/R_statistics/rgrass7#R_within_GRASS)
+- Using [GRASS GIS within an R session](https://grasswiki.osgeo.org/wiki/R_statistics/rgrass7#GRASS_within_R)
 <br><br>
 
 @size[22px](Details and examples at the <a href="https://grasswiki.osgeo.org/wiki/R_statistics/rgrass7">GRASS and R wiki</a>)
