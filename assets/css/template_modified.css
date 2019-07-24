@@ -435,7 +435,6 @@ div.slide-number a {
 /** About Template Styles **/
 
 .about-team-pic img {
-  width: 60%;
   border: none !important;
   box-shadow: none !important;
   -webkit-clip-path: circle(35% at 50% 50%);

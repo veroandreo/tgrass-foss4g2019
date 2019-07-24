@@ -35,7 +35,7 @@ Université Libre de Bruxelles. Belgium.
 @snapend
 
 @snap[west span-33]
-@img[about-team-pic span-80](assets/img/vero_round_small.png)
+@img[about-team-pic span-60](assets/img/vero_round_small.png)
 <br><br>
 @css[bio-byline](@fa[github pad-fa] veroandreo<br>@fa[twitter pad-fa] @VeronicaAndreo)
 @snapend
