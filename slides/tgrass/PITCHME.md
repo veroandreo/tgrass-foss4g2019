@@ -1,23 +1,17 @@
 ---?image=assets/img/grass_template.png&position=bottom&size=100% 30%
 @title[Front page]
 
-@snap[north span-100]
+@snap[midpoint span-100]
 <br>
 <h2>Spatio-temporal data processing & visualization in @color[green](GRASS GIS)</h2>
 @snapend
-
-<!---
-@snap[south message-box-white]
-<br>Dra. Verónica Andreo<br>CONICET - INMeT<br><br>Instituto Gulich. Córdoba, 2019<br>
-@snapend
---->
 
 ---
 
 @color[#8EA33B](GRASS GIS) is **the first Open Source GIS** that incorporated
 capabilities to **manage, analyze, process and visualize spatio-temporal
 data**, as well as the temporal relationships among time series.
-<br>
+<br><br>
 @fa[layer-group fa-3x text-green]
 
 +++
@@ -45,7 +39,8 @@ STDS in each mapset.
 - Space time raster datasets (**ST@color[#8EA33B](R)DS**)
 - Space time 3D raster datasets (**ST@color[#8EA33B](R3)DS**)
 - Space time vector datasets (**ST@color[#8EA33B](V)DS**)
-<br>
+
+<br><br>
 @fa[layer-group fa-3x text-green]
 
 +++

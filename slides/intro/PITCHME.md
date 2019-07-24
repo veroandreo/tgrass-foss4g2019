@@ -38,6 +38,7 @@ Université Libre de Bruxelles. Belgium.
 @img[about-team-pic span-50](assets/img/vero_round_small.png)
 <br>
 @css[bio-byline](@fa[github pad-fa] veroandreo)
+<br><br>
 @snapend
 
 ---?image=assets/img/grass_template.png&position=bottom&size=100% 30%
@@ -324,7 +325,7 @@ GRASS GIS offers different interfaces for the interaction between user and softw
 ### Let's see them!
 
 <br>
-@fa[angle-double-down green fa-3x]
+@fa[angle-double-down text-green fa-3x]
 
 +++
 
