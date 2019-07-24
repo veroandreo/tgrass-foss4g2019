@@ -95,11 +95,9 @@ STDS in each mapset.
 - [modis_lst mapset (2Mb)](https://gitlab.com/veroandreo/grass-gis-geostat-2018/blob/master/data/modis_lst.zip): download and unzip within `$HOME/grassdata/nc_spm_08_grass7`
 - [GRASS code](https://gitlab.com/veroandreo/grass-gis-conae/raw/master/code/05_temporal_code.sh?inline=false)
 
-... and start GRASS GIS
+<br>
+... and start GRASS GIS @fa[grin-hearts text-pink fa-spin]
 
-```bash
-grass76 $HOME/grassdata/nc_spm_08_grass7/modis_lst --gui
-```
 
 ---?code=code/05_temporal_code.sh&lang=bash&title=Set computational region and apply MASK
 
