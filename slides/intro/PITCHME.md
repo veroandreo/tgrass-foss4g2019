@@ -6,17 +6,32 @@
 <h2>Spatio-temporal data processing & visualization in @color[green](GRASS GIS)</h2>
 @snapend
 
+@snap[midpoint text-05 span-100]
+Verónica Andreo, Martin Landa, Ondřej Pešek, Markus Neteler, Luca Delucchi, Moritz Lennert
+
+1 Instituto Nacional de Medicina Tropical (INMeT) - Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET). Puerto Iguazú, Argentina.
+2 Czech Technical University in Prague. Czech Republic.
+3 JRC - The Joint Research Centre. Ispra, Italy.
+4 mundialis GmbH & Co. KG. Bonn, Germany.
+5 Fondazione Edmund Mach. San Michele all’Adige, Italy.
+6 Université Libre de Bruxelles. Belgium.
+@snapend
+
+@snap[south]
+FOSS4G 2019, Bucharest
+@snapend
+
 ---
 @title[About the trainers]
 
-@snap[north span-100]
+@snap[north span-35]
 ### Who are we?
 @snapend
 
-@snap[west]
-![myphoto](assets/img/vero_round_small.png)
+@snap[north-west span-33]
+@img[span-25](assets/img/vero_round_small.png)
 <br><br>
-@css[bio-byline](@fa[github pad-fa] veroandreo @fa[twitter pad-fa] @VeronicaAndreo<br>@fa[envelope pad-fa] veroandreo@gmail.com)
+@css[bio-byline](@fa[github pad-fa] veroandreo<br>@fa[twitter pad-fa] @VeronicaAndreo)
 @snapend
 
 ---?image=assets/img/grass_template.png&position=bottom&size=100% 30%
@@ -113,7 +128,7 @@ A bit of (geek) GRASS GIS history...
 
 ---
 
-@snap[midpoint]
+@snap[midpoint span-100]
 Well, except for this...
 <br>
 @img[span-100](assets/img/start_screen1.png)
@@ -247,7 +262,7 @@ always considered in their original extent.
   - Fine-tune the settings of a certain module
   - Run different processes in different areas
 
-<br>
+<br><br>
 @size[18px](More details at the [Computational region wiki](https://grasswiki.osgeo.org/wiki/Computational_region))
 
 ---
@@ -290,7 +305,7 @@ r.mapcalc expression="MASK = if(elevation < 100, 1, null())"
 r.mask -r
 ```
 
-<br>
+<br><br>
 @size[22px](**Note**: A mask is only actually applied when reading a GRASS raster map, i.e., when used as input in a module.)
 
 ---
@@ -302,7 +317,8 @@ GRASS GIS offers different interfaces for the interaction between user and softw
 <br>
 ### Let's see them!
 
-@fa[angle-double-down fa-3x green]
+<br>
+@fa[angle-double-down green fa-3x]
 
 +++
 
@@ -368,8 +384,8 @@ The simplest way to execute a Python script is through the @color[#8EA33B](Simpl
 
 +++?code=code/01_intro_grass_session_vector_import.py&lang=python
 
-@snap[north span-100]
-... or use GRASS GIS through **grass-session** Python library
+@snap[north span-90]
+... or use the **grass-session** Python library
 @snapend
 
 @[17-28](Import libraries)
@@ -377,7 +393,7 @@ The simplest way to execute a Python script is through the @color[#8EA33B](Simpl
 @[50-66](Run modules)
 @[68-69](Clean and close)
 
-<br>
+<br><br>
 @size[18px](Credits: Pietro Zambelli. See <a href="https://github.com/zarch/grass-session">grass-session GitHub</a> for further details.)
 
 +++
@@ -521,7 +537,7 @@ GRASS GIS and R can be used together in two ways:
 
 ```bash
  # running a module
- grass76 $HOME/grassdata/nc_spm_08_grass7/PERMANENT/ --exec r.info map=elevation
+ grass76 $HOME/grassdata/nc_spm_08_grass7/PERMANENT/ --exec r.info elevation
  
  # running a script
  grass76 $HOME/grassdata/nc_spm_08_grass7/PERMANENT/ --exec sh test.sh
@@ -561,9 +577,9 @@ GRASS GIS and R can be used together in two ways:
 
 - [GRASS intro workshop held at NCSU](https://ncsu-osgeorel.github.io/grass-intro-workshop/)
 - [Unleash the power of GRASS GIS at US-IALE 2017](https://grasswiki.osgeo.org/wiki/Unleash_the_power_of_GRASS_GIS_at_US-IALE_2017)
-- [GRASS GIS workshop in Jena 2018](http://training.gismentors.eu/grass-gis-workshop-jena-2018/index.html)
-- [Raster data processing in GRASS GIS](https://grass.osgeo.org/grass76/manuals/rasterintro.html)
-- [Vector data processing in GRASS GIS](https://grass.osgeo.org/grass76/manuals/vectorintro.html)
+- [GRASS GIS course in Jena 2018](http://training.gismentors.eu/grass-gis-workshop-jena-2018/index.html)
+- [GRASS GIS course IRSAE 2018](http://training.gismentors.eu/grass-gis-irsae-winter-course-2018/index.html)
+- [GRASS GIS course in Argentina 2018](https://gitlab.com/veroandreo/curso-grass-gis-rioiv)
 
 ---
 
