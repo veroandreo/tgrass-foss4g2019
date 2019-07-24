@@ -6,18 +6,25 @@
 <h2>Spatio-temporal data processing & visualization in @color[green](GRASS GIS)</h2>
 @snapend
 
-@snap[midpoint text-05 span-100]
+@snap[midpoint message-box-white text-05 span-100]
+
+<br><br>
 Verónica Andreo, Martin Landa, Ondřej Pešek, Markus Neteler, Luca Delucchi, Moritz Lennert
 
 1 Instituto Nacional de Medicina Tropical (INMeT) - Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET). Puerto Iguazú, Argentina.
+
 2 Czech Technical University in Prague. Czech Republic.
+
 3 JRC - The Joint Research Centre. Ispra, Italy.
+
 4 mundialis GmbH & Co. KG. Bonn, Germany.
+
 5 Fondazione Edmund Mach. San Michele all’Adige, Italy.
+
 6 Université Libre de Bruxelles. Belgium.
 @snapend
 
-@snap[south]
+@snap[south message-box-white span-100]
 FOSS4G 2019, Bucharest
 @snapend
 
