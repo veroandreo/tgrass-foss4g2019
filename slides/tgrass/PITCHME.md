@@ -440,18 +440,18 @@ We need:
 ### Surface Urban Heat Island (SUHI)
 @snapend
 
-@snap[west span-65 text-09]
+@snap[west span-60 text-09]
 @ul
 - Air temperature of an urban area is higher than that in nearby areas
 - UHI has negative effects on water and air quality, biodiversity, human health, and climate
-- SUHI is still highly related to health, since it influences UHI 
+- SUHI is also highly related to health, since it influences UHI 
 @ulend
 @snapend
 
-@snap[east span-35]
-@img[span-90](https://res.mdpi.com/remotesensing/remotesensing-11-01212/article_deploy/html/images/remotesensing-11-01212-g002-550.jpg)
+@snap[east span-40]
+@img[span-95](https://res.mdpi.com/remotesensing/remotesensing-11-01212/article_deploy/html/images/remotesensing-11-01212-g002-550.jpg)
 <br>
-@size[18px](Schematic representation of SUHI and surrounding rural area for Buenos Aires city. Source <a href="https://www.mdpi.com/2072-4292/11/10/1212/htm">Wu et al, 2019.</a>)
+@size[18px](SUHI and surrounding rural area for Buenos Aires city. Source <a href="https://www.mdpi.com/2072-4292/11/10/1212/htm">Wu et al, 2019.</a>)
 @snapend
 
 +++?code=code/05_temporal_code.sh&lang=bash&title=Summer SUHI for the city of Raleigh and surroundings
@@ -471,6 +471,10 @@ We need:
 
 @[425-430](Extract zonal stats for Raleigh surroundings)
 @[432-434](Take a look at mean summer LST in Raleigh and surroundings)
+
++++
+
+find a nice way to display the resulting vectors 
 
 ---
 
