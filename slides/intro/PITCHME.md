@@ -25,40 +25,43 @@
 @img[about-team-pic span-50](assets/img/vero_round_small.png)
 <br>
 @css[bio-byline](@fa[github pad-fa] <a href="https://github.com/veroandreo/">veroandreo</a>)
-<br><br>
+<br><br><br>
 @snapend
 
 @snap[midpoint span-33 text-center]
 @img[about-team-pic span-50](assets/img/martin_round.png)
 <br>
-@css[bio-byline](@fa[github pad-fa] landam)
-<br><br>
+@css[bio-byline](@fa[github pad-fa] <a href="https://github.com/landam/">landam</a>)
+<br><br><br>
 @snapend
 
 @snap[east span-33 text-center]
 @img[about-team-pic span-50](assets/img/ondrej_round.png)
 <br>
-@css[bio-byline](@fa[github pad-fa] pesekon2)
-<br><br>
+@css[bio-byline](@fa[github pad-fa] <a href="https://github.com/pesekon2/">pesekon2</a>)
+<br><br><br>
 @snapend
 
 
 @snap[south-west span-33 text-center]
 @img[about-team-pic span-50](assets/img/markus_round.png)
 <br>
-@css[bio-byline](@fa[github pad-fa] neteler)
+@css[bio-byline](@fa[github pad-fa] <a href="https://github.com/neteler/">neteler</a>)
+<br>
 @snapend
 
 @snap[south span-33 text-center]
 @img[about-team-pic span-50](assets/img/luca_round.png)
 <br>
-@css[bio-byline](@fa[github pad-fa] lucadelu)
+@css[bio-byline](@fa[github pad-fa] <a href="https://github.com/lucadelu/">lucadelu</a>)
+<br>
 @snapend
 
 @snap[south-east span-33 text-center]
 @img[about-team-pic span-50](assets/img/moritz_round.png)
 <br>
-@css[bio-byline](@fa[github pad-fa] mlennert)
+@css[bio-byline](@fa[github pad-fa] <a href="https://github.com/mlennert/">mlennert</a>)
+<br>
 @snapend
 
 ---?image=assets/img/grass_template.png&position=bottom&size=100% 30%
