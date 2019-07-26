@@ -41,6 +41,39 @@ Université Libre de Bruxelles. Belgium.
 <br><br>
 @snapend
 
+@snap[midpoint span-35]
+@img[about-team-pic span-50](assets/img/martin.jpg)
+<br>
+@css[bio-byline](@fa[github pad-fa] landam)
+<br><br>
+@snapend
+
+@snap[east span-35]
+@img[about-team-pic span-50](assets/img/ondrej.jpg)
+<br>
+@css[bio-byline](@fa[github pad-fa] pesekon2)
+<br><br>
+@snapend
+
+
+@snap[south-west span-35]
+@img[about-team-pic span-50](assets/img/markus.jpg)
+<br>
+@css[bio-byline](@fa[github pad-fa] neteler)
+@snapend
+
+@snap[south span-35]
+@img[about-team-pic span-50](assets/img/luca.jpg)
+<br>
+@css[bio-byline](@fa[github pad-fa] lucadelu)
+@snapend
+
+@snap[midpoint span-35]
+@img[about-team-pic span-50](assets/img/moritz.jpg)
+<br>
+@css[bio-byline](@fa[github pad-fa] mlennert)
+@snapend
+
 ---?image=assets/img/grass_template.png&position=bottom&size=100% 30%
 
 # Brief intro to GRASS GIS

@@ -103,7 +103,7 @@ STDS in each mapset.
 
 @[32-40](List raster maps and get info)
 @[43-61](Set computational region)
-@[63-67](Set a MASK)
+@[63-67](Set a MASK to focus only on NC state)
 
 ---
 
@@ -154,6 +154,9 @@ STDS in each mapset.
 
 <img src="assets/img/g_gui_timeline_monthly.png" width="70%">
 
+@size[20px](Monthly LST for the period 2015-2017)
+
+<br><br>
 @size[24px](See <a href="https://grass.osgeo.org/grass76/manuals/g.gui.timeline.html">g.gui.timeline</a> manual page)
 
 ---
@@ -297,13 +300,14 @@ id, name, layer, creator, mapset, temporal_type, creation_time, start_time, end_
 
 > @fa[tasks] **Task**: Compare the monthly and seasonal timelines with [g.gui.timeline](https://grass.osgeo.org/grass76/manuals/g.gui.timeline.html)
 
-<!---
++++
+
 ```bash
 g.gui.timeline inputs=LST_Day_monthly_celsius,LST_Day_mean_3month
 ```
 
-put the img here
---->
+<br>
+@img[span-80](assets/img/g_gui_timeline_monthly_seasonal.png)
 
 +++?code=code/05_temporal_code.sh&lang=bash&title=Display seasonal LST using frames in wx monitor
 
@@ -330,6 +334,7 @@ put the img here
 +++
 
 One solution could be...
+
 <br><br>
 ```bash
 t.rast.aggregate input=LST_Day_monthly_celsius \
@@ -410,6 +415,8 @@ We need:
 
 ![Anomalies animation](assets/img/LST_anomalies.gif)
 
+@size[20px](Anual anomalies in mean LST)
+
 ---
 
 ### Zonal statistics in raster time series
@@ -423,6 +430,10 @@ We need:
 @[392-393](Install v.strds.stats add-on)
 @[395-398](Extract seasonal average LST for Raleigh urban area)
 @[400-403](Save the attribute table of the new vector into a csv file)
+
+---
+
+### Surface Urban Heat Island 
 
 ---
 
