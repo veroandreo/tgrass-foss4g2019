@@ -449,9 +449,9 @@ We need:
 @snapend
 
 @snap[east span-40]
-@img[span-95](https://res.mdpi.com/remotesensing/remotesensing-11-01212/article_deploy/html/images/remotesensing-11-01212-g002-550.jpg)
+@img[span-90](https://res.mdpi.com/remotesensing/remotesensing-11-01212/article_deploy/html/images/remotesensing-11-01212-g002-550.jpg)
 <br>
-@size[18px](SUHI and surrounding rural area for Buenos Aires city. Source <a href="https://www.mdpi.com/2072-4292/11/10/1212/htm">Wu et al, 2019.</a>)
+@size[16px](SUHI and surrounding rural area for Buenos Aires city. Source <a href="https://www.mdpi.com/2072-4292/11/10/1212/htm">Wu et al, 2019.</a>)
 @snapend
 
 +++?code=code/05_temporal_code.sh&lang=bash&title=Summer SUHI for the city of Raleigh and surroundings
