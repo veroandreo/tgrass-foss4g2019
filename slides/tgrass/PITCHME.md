@@ -440,7 +440,7 @@ We need:
 ### Surface Urban Heat Island (SUHI)
 @snapend
 
-@snap[west span-65 text-07]
+@snap[west span-65 text-09]
 @ul
 - Air temperature of an urban area is higher than that in nearby areas
 - UHI has negative effects on water and air quality, biodiversity, human health, and climate
@@ -449,9 +449,9 @@ We need:
 @snapend
 
 @snap[east span-35]
-@img[span-70](https://res.mdpi.com/remotesensing/remotesensing-11-01212/article_deploy/html/images/remotesensing-11-01212-g002-550.jpg)
+@img[span-90](https://res.mdpi.com/remotesensing/remotesensing-11-01212/article_deploy/html/images/remotesensing-11-01212-g002-550.jpg)
 <br>
-@size[20px](Schematic representation of SUHI and surrounding rural area for Buenos Aires city. Source <a href="https://www.mdpi.com/2072-4292/11/10/1212/htm">Wu et al, 2019.</a>)
+@size[18px](Schematic representation of SUHI and surrounding rural area for Buenos Aires city. Source <a href="https://www.mdpi.com/2072-4292/11/10/1212/htm">Wu et al, 2019.</a>)
 @snapend
 
 +++?code=code/05_temporal_code.sh&lang=bash&title=Summer SUHI for the city of Raleigh and surroundings
