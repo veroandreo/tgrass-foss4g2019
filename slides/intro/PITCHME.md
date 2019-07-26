@@ -5,13 +5,16 @@
 <h1>Spatio-temporal data processing & visualization in @color[green](GRASS GIS)</h1>
 @snapend
 
-@snap[south message-box-white text-05 span-100]
+@snap[south message-box-white span-100]
+@size[30px](FOSS4G 2019, Bucharest)
+@snapend
+
+<!---
 @size[25px](Verónica Andreo, Martin Landa, Ondřej Pešek, Markus Neteler, Luca Delucchi & Moritz Lennert)
 <br><br>
 @size[20px](Instituto Nacional de Medicina Tropical - Consejo Nacional de Investigaciones Científicas y Técnicas. Puerto Iguazú, Argentina / Czech Technical University in Prague. Czech Republic / JRC - Joint Research Centre. Ispra, Italy / mundialis GmbH & Co. KG. Bonn, Germany / Fondazione Edmund Mach. San Michele all’Adige, Italy / Université Libre de Bruxelles. Belgium.)
 <br><br>
-@size[30px](FOSS4G 2019, Bucharest)
-@snapend
+--->
 
 ---
 @title[About the trainers]
