@@ -24,7 +24,7 @@
 @snap[west span-33 text-center]
 @img[about-team-pic span-50](assets/img/vero_round_small.png)
 <br>
-@css[bio-byline](@fa[github pad-fa] veroandreo)
+@css[bio-byline](@fa[github pad-fa] <a href="https://github.com/veroandreo/">veroandreo</a>)
 <br><br>
 @snapend
 
@@ -55,7 +55,7 @@
 @css[bio-byline](@fa[github pad-fa] lucadelu)
 @snapend
 
-@snap[midpoint span-33 text-center]
+@snap[south-east span-33 text-center]
 @img[about-team-pic span-50](assets/img/moritz_round.png)
 <br>
 @css[bio-byline](@fa[github pad-fa] mlennert)
