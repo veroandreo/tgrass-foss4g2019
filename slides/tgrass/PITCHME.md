@@ -3,12 +3,16 @@
 
 @snap[midpoint span-100]
 <br>
-<h2>Spatio-temporal data processing & visualization in @color[green](GRASS GIS)</h2>
+<h1>Spatio-temporal data processing & visualization in @color[green](GRASS GIS)</h1>
+@snapend
+
+@snap[south message-box-white span-100]
+@size[30px](FOSS4G 2019, Bucharest)
 @snapend
 
 ---
 
-@color[#8EA33B](GRASS GIS) is **the first Open Source GIS** that incorporated
+@color[#8EA33B](GRASS GIS) is **the first FOSS GIS** that incorporated
 capabilities to **manage, analyze, process and visualize spatio-temporal
 data**, as well as the temporal relationships among time series.
 <br><br>
@@ -413,7 +417,7 @@ We need:
 
 +++
 
-![Anomalies animation](assets/img/LST_anomalies.gif)
+![Anomalies animation](assets/img/anomalies.gif)
 
 @size[20px](Anual anomalies in mean LST)
 
@@ -428,12 +432,29 @@ We need:
 +++?code=code/05_temporal_code.sh&lang=bash&title=Extract mean LST for Raleigh (NC) urban area
 
 @[392-393](Install v.strds.stats add-on)
-@[395-398](Extract seasonal average LST for Raleigh urban area)
-@[400-403](Save the attribute table of the new vector into a csv file)
+@[395-398](Extract summer average LST for Raleigh urban area)
 
----
++++
 
-### Surface Urban Heat Island 
+### Surface Urban Heat Island (SUHI)
+
++++?code=code/05_temporal_code.sh&lang=bash&title=Summer SUHI for the city of Raleigh and surroundings
+
+@[409-412](Create outside buffer - 15km)
+@[414-417](Create otside buffer - 3km)
+@[419-423](Remove 3km buffer area from the 15km buffer area)
+
++++
+
+![SUHI buffers](assets/img/suhi_buffers.png)
+
+<br>
+@size[20px](Raleigh city boundary and surrounding area)
+
++++?code=code/05_temporal_code.sh&lang=bash&title=Summer SUHI for the city of Raleigh and surroundings
+
+@[425-430](Extract zonal stats for Raleigh surroundings)
+@[432-434](Take a look at mean summer LST in Raleigh and surroundings)
 
 ---
 

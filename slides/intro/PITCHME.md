@@ -414,11 +414,7 @@ The simplest way to execute a Python script is through the @color[#8EA33B](Simpl
  r.colors(map=output, color="elevation")
 ``` 
 
-+++?code=code/01_intro_grass_session_vector_import.py&lang=python
-
-@snap[north span-90]
-... or use the **grass-session** Python library
-@snapend
++++?code=code/01_intro_grass_session_vector_import.py&lang=python&title=... or use the **grass-session** Python library
 
 @[17-28](Import libraries)
 @[36-48](Create Location and Mapset)

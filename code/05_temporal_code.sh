@@ -3,7 +3,7 @@
 ########################################################################
 # Commands for the TGRASS lecture at GEOSTAT Summer School in Prague
 # Author: Veronica Andreo
-# Date: July - August, 2018 - Edited October, 2018
+# Date: July - August, 2018 - Edited October, 2018 and July, 2019 
 ########################################################################
 
 
@@ -42,7 +42,7 @@ r.info map=MOD11B3.A2015060.h11v05.single_LST_Day_6km
 
 ## Region settings and MASK
 
-# Set region to NC state with LST maps' resolution
+# Set region to NC state boundary with LST maps' resolution
 g.region -p vector=nc_state \
   align=MOD11B3.A2015060.h11v05.single_LST_Day_6km
 
@@ -60,7 +60,7 @@ g.region -p vector=nc_state \
 #~ cols:       145
 #~ cells:      8120
 
-# Set a MASK to nc_state boundary
+# Set a MASK to NC state boundary
 r.mask vector=nc_state
 
 # you should see this statement in the terminal from now on
@@ -92,7 +92,7 @@ t.register -i input=LST_Day_monthly \
 g.list type=raster pattern="MOD11B3*LST_Day*" output=map_list.txt
 t.register -i input=LST_Day_monthly \
  file=map_list.txt start="2015-01-01" increment="1 months"
-               
+
 # Check info again
 t.info input=LST_Day_monthly
 
@@ -267,7 +267,7 @@ d.text -b text="Month of maximum LST 2015-2017" \
   color=black align=cc font=sans size=12
 
 
-## Temporal aggregation (granularity of three months)
+## Temporal aggregation ( with granularity)
  
 # 3-month mean LST
 t.rast.aggregate input=LST_Day_monthly_celsius \
@@ -392,41 +392,52 @@ g.gui.animation strds=LST_year_anomaly
 # Install v.strds.stats add-on
 g.extension extension=v.strds.stats
 
-# Extract seasonal average LST for Raleigh urban area
-v.strds.stats input=urbanarea strds=LST_Day_mean_3month \
-  where="NAME == 'Raleigh'" \
-  output=raleigh_aggr_lst method=average
+# List maps in seasonal time series
+t.rast.list LST_Day_mean_3month
 
-# Save the attribute table of the new vector into a csv file
-v.db.select map=raleigh_aggr_lst file=lst_raleigh
+# Extract summer average LST for Raleigh urban area
+v.strds.stats input=urbanarea \
+  strds=LST_Day_mean_3month \
+  where="NAME == 'Raleigh'" \
+  t_where="strftime('%m', start_time)='07'" \
+  method=average \
+  output=raleigh_summer_lst 
+
+
+## SUHI vs surroundings from 2015 to 2017
+
+# Create outside buffer - 15km
+v.buffer input=raleigh_summer_lst \
+  distance=15000 \
+  output=raleigh_summer_lst_buf15
+
+# Create otside buffer - 3km
+v.buffer input=raleigh_summer_lst \
+  distance=3000 \
+  output=raleigh_summer_lst_buf3
+
+# Remove 3km buffer area from the 15km buffer area
+v.overlay ainput=raleigh_summer_lst_buf3 \
+  binput=raleigh_summer_lst_buf15 \
+  operator=xor \
+  output=raleigh_surr
+
+# Extract zonal stats for Raleigh surroundings
+v.strds.stats input=raleigh_surr \
+  strds=LST_Day_mean_3month \
+  t_where="strftime('%m', start_time)='07'" \
+  method=average \
+  output=raleigh_surr_summer_lst 
+
+# Take a look at mean summer LST in Raleigh and surroundings
+v.db.select raleigh_summer_lst
+v.db.select raleigh_surr_summer_lst
+
+
+
 
 
 ### Some extra examples ###
-
-
-## UHI vs surroundings in 2015 and 2017
-
-# extract only Raleigh urban area
-v.extract input=urbanarea where="NAME == 'Raleigh'" \
-  output=raleigh
-
-# create a buffer
-v.buffer input=raleigh distance=15000 output=raleigh_buf15
-
-# remove raleigh from the buffer area
-v.overlay ainput=raleigh binput=raleigh_buf15 \
-  operator=xor output=raleigh_surr
-
-# extract zonal stats for raleigh and surroundings
-v.rast.stats map=raleigh raster=LST_yearly_average_2015 \
-  method=average column_prefix=LST_2015
-v.rast.stats map=raleigh raster=LST_yearly_average_2017 \
-  method=average column_prefix=LST_2017
-
-v.rast.stats map=raleigh_surr raster=LST_yearly_average_2015 \
-  method=average column_prefix=LST_2015
-v.rast.stats map=raleigh_surr raster=LST_yearly_average_2017 \
-  method=average column_prefix=LST_2017
 
 
 ## Example of t.rast.accumulate and t.rast.accdetect application
