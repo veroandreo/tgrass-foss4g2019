@@ -449,6 +449,7 @@ We need:
 @snapend
 
 @snap[east span-40]
+<br><br>
 @img[span-90](https://res.mdpi.com/remotesensing/remotesensing-11-01212/article_deploy/html/images/remotesensing-11-01212-g002-550.jpg)
 <br>
 @size[16px](SUHI and surrounding rural area for Buenos Aires city. Source <a href="https://www.mdpi.com/2072-4292/11/10/1212/htm">Wu et al, 2019.</a>)
