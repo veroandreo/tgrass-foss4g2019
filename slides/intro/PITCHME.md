@@ -7,22 +7,9 @@
 @snapend
 
 @snap[south message-box-white text-05 span-100]
-
 @size[25px](Verónica Andreo, Martin Landa, Ondřej Pešek, Markus Neteler, Luca Delucchi & Moritz Lennert)
-
 <br><br>
-Instituto Nacional de Medicina Tropical (INMeT) - Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET). Puerto Iguazú, Argentina / 
-
-Czech Technical University in Prague. Czech Republic /
- 
-JRC - The Joint Research Centre. Ispra, Italy /
-
-mundialis GmbH & Co. KG. Bonn, Germany /
-
-Fondazione Edmund Mach. San Michele all’Adige, Italy /
-
-Université Libre de Bruxelles. Belgium.
-
+@size[20px](Instituto Nacional de Medicina Tropical (INMeT) - Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET). Puerto Iguazú, Argentina / Czech Technical University in Prague. Czech Republic / JRC - The Joint Research Centre. Ispra, Italy / mundialis GmbH & Co. KG. Bonn, Germany / Fondazione Edmund Mach. San Michele all’Adige, Italy / Université Libre de Bruxelles. Belgium.)
 <br><br>
 @size[30px](FOSS4G 2019, Bucharest)
 @snapend
@@ -41,35 +28,35 @@ Université Libre de Bruxelles. Belgium.
 <br><br>
 @snapend
 
-@snap[midpoint span-35]
-@img[about-team-pic span-50](assets/img/martin.jpg)
+@snap[midpoint span-33 text-center]
+@img[about-team-pic span-50](assets/img/martin_round.png)
 <br>
 @css[bio-byline](@fa[github pad-fa] landam)
 <br><br>
 @snapend
 
-@snap[east span-35]
-@img[about-team-pic span-50](assets/img/ondrej.jpg)
+@snap[east span-33 text-center]
+@img[about-team-pic span-50](assets/img/ondrej_round.png)
 <br>
 @css[bio-byline](@fa[github pad-fa] pesekon2)
 <br><br>
 @snapend
 
 
-@snap[south-west span-35]
-@img[about-team-pic span-50](assets/img/markus.jpg)
+@snap[south-west span-33 text-center]
+@img[about-team-pic span-50](assets/img/markus_round.png)
 <br>
 @css[bio-byline](@fa[github pad-fa] neteler)
 @snapend
 
-@snap[south span-35]
-@img[about-team-pic span-50](assets/img/luca.jpg)
+@snap[south span-33 text-center]
+@img[about-team-pic span-50](assets/img/luca_round.png)
 <br>
 @css[bio-byline](@fa[github pad-fa] lucadelu)
 @snapend
 
-@snap[midpoint span-35]
-@img[about-team-pic span-50](assets/img/moritz.jpg)
+@snap[midpoint span-33 text-center]
+@img[about-team-pic span-50](assets/img/moritz_round.png)
 <br>
 @css[bio-byline](@fa[github pad-fa] mlennert)
 @snapend

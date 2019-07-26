@@ -5,15 +5,10 @@ Verónica Andreo<sup>1</sup>, Martin Landa<sup>2</sup>, Ondřej Pešek<sup>3</su
 
 
 <sup>1</sup> Instituto Nacional de Medicina Tropical (INMeT) - Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET). Puerto Iguazú, Argentina.
-
 <sup>2</sup> Czech Technical University in Prague. Czech Republic.
- 
 <sup>3</sup> JRC - The Joint Research Centre. Ispra, Italy.
-
 <sup>4</sup> mundialis GmbH & Co. KG. Bonn, Germany.
-
 <sup>5</sup> Fondazione Edmund Mach. San Michele all’Adige, Italy.
-
 <sup>6</sup> Université Libre de Bruxelles. Belgium.
 
 
