@@ -462,7 +462,7 @@ We need:
 
 +++
 
-![SUHI buffers](assets/img/suhi_buffers.png)
+@img[span-70](assets/img/suhi_buffers.png)
 
 <br>
 @size[20px](Raleigh city boundary and surrounding rural area)
@@ -505,7 +505,7 @@ rstudio &
 
 +++
 
-![ggplot2 map](assests/img/sf_plot.png)
+![ggplot2 map](assets/img/sf_plot.png)
 
 +++?code=code/suhi_plot.r&lang=r&title=Plotting GRASS GIS maps in R
 
@@ -516,7 +516,7 @@ rstudio &
 
 +++
 
-![ggplot2 map](assests/img/ggplot.png)
+![ggplot2 map](assets/img/ggplot.png)
 
 +++?code=code/suhi_plot.r&lang=r&title=Plotting GRASS GIS maps in R
 
