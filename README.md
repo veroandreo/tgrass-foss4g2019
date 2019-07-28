@@ -9,7 +9,8 @@
 <sup>4</sup> mundialis GmbH & Co. KG. Bonn, Germany.
 <sup>5</sup> Fondazione Edmund Mach. San Michele all’Adige, Italy.
 <sup>6</sup> Université Libre de Bruxelles. Belgium.
-</sub>\ 
+</sub>  
+
 
 
 [GRASS GIS](https://grass.osgeo.org) is a general purpose Free and Open 
