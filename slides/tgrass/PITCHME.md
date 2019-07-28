@@ -96,7 +96,7 @@ STDS in each mapset.
 ### @fa[download text-green] get the data and the code @fa[download text-green]
 <br>
 - [modis_lst mapset (2Mb)](https://gitlab.com/veroandreo/grass-gis-geostat-2018/blob/master/data/modis_lst.zip): download and unzip within `$HOME/grassdata/nc_spm_08_grass7`
-- [GRASS code](https://github.com/veroandreo/tgrass-foss4g2019/blob/master/code/05_temporal_code.sh?inline=false)
+- [GRASS code](https://github.com/veroandreo/tgrass-foss4g2019/blob/master/code/05_temporal_code.sh)
 
 <br>
 ... and start GRASS GIS @fa[grin-hearts text-pink fa-spin]
@@ -460,7 +460,7 @@ We need:
 
 +++
 
-@img[span-60](assets/img/suhi_buffers.png)
+<img src="assets/img/suhi_buffers.png" width="70%">
 
 <br>
 @size[20px](Raleigh city boundary and surrounding rural area)
