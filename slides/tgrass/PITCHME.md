@@ -493,8 +493,8 @@ rstudio &
 
 +++
 
-@img[span-60](assests/img/spplot1.png)
-@img[span-60](assests/img/spplot2.png)
+@img[span-60](assets/img/spplot1.png)
+@img[span-60](assets/img/spplot2.png)
 
 +++?code=code/suhi_plot.r&lang=r&title=Plotting GRASS GIS maps in R
 
