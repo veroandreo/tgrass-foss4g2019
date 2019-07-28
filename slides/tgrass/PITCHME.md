@@ -2,7 +2,6 @@
 @title[Front page]
 
 @snap[midpoint span-100]
-<br>
 <h1>Spatio-temporal data processing & visualization in @color[green](GRASS GIS)</h1>
 @snapend
 
@@ -423,19 +422,6 @@ We need:
 
 ---
 
-### Zonal statistics in raster time series
-
-**[v.strds.stats](https://grass.osgeo.org/grass7/manuals/addons/v.strds.stats.html)**
-<br>
-- Allows to obtain spatially aggregated time series data for polygons in a vector map
-
-+++?code=code/05_temporal_code.sh&lang=bash&title=Extract mean LST for Raleigh (NC) urban area
-
-@[392-393](Install v.strds.stats add-on)
-@[395-398](Extract summer average LST for Raleigh urban area)
-
-+++
-
 @snap[north span-100]
 ### Surface Urban Heat Island (SUHI)
 @snapend
@@ -454,6 +440,19 @@ We need:
 <br>
 @size[16px](SUHI and surrounding rural area for Buenos Aires city. Source <a href="https://www.mdpi.com/2072-4292/11/10/1212/htm">Wu et al, 2019.</a>)
 @snapend
+
++++
+
+### Zonal statistics in raster time series
+
+**[v.strds.stats](https://grass.osgeo.org/grass7/manuals/addons/v.strds.stats.html)**
+<br>
+- Allows to obtain spatially aggregated time series data for polygons in a vector map
+
++++?code=code/05_temporal_code.sh&lang=bash&title=Extract mean LST for Raleigh (NC) urban area
+
+@[392-393](Install v.strds.stats add-on)
+@[395-398](Extract summer average LST for Raleigh urban area)
 
 +++?code=code/05_temporal_code.sh&lang=bash&title=Summer SUHI for the city of Raleigh and surroundings
 
@@ -475,7 +474,22 @@ We need:
 
 +++
 
-find a nice way to display the resulting vectors 
+We'll use R to create a nice and easy plot with the resulting vector maps
+
+```bash
+#open RStudio from GRASS
+rstudio &
+```
+
+@fa[download text-green] Download the [R code]() for this part @fa[download text-green]
+
++++
+
+Once in RStudio
+
+@[]()
+@[]()
+@[]()
 
 ---
 

@@ -406,19 +406,19 @@ v.strds.stats input=urbanarea \
 
 ## SUHI vs surroundings from 2015 to 2017
 
-# Create outside buffer - 15km
+# Create outside buffer - 30km
+v.buffer input=raleigh_summer_lst \
+  distance=30000 \
+  output=raleigh_summer_lst_buf30
+
+# Create otside buffer - 15km
 v.buffer input=raleigh_summer_lst \
   distance=15000 \
   output=raleigh_summer_lst_buf15
 
-# Create otside buffer - 3km
-v.buffer input=raleigh_summer_lst \
-  distance=3000 \
-  output=raleigh_summer_lst_buf3
-
-# Remove 3km buffer area from the 15km buffer area
-v.overlay ainput=raleigh_summer_lst_buf3 \
-  binput=raleigh_summer_lst_buf15 \
+# Remove 15km buffer area from the 30km buffer area
+v.overlay ainput=raleigh_summer_lst_buf15 \
+  binput=raleigh_summer_lst_buf30 \
   operator=xor \
   output=raleigh_surr
 
@@ -432,7 +432,6 @@ v.strds.stats input=raleigh_surr \
 # Take a look at mean summer LST in Raleigh and surroundings
 v.db.select raleigh_summer_lst
 v.db.select raleigh_surr_summer_lst
-
 
 
 
