@@ -474,16 +474,13 @@ We need:
 
 +++
 
-We'll use R to create a nice and easy plot with the resulting vector maps
+We'll use @fa[r-project text-blue] and RStudio to create a nice and easy plot with the resulting vector maps
 
 <br>
 @fa[download text-green] Download the [R code](https://github.com/veroandreo/tgrass-foss4g2019/blob/master/code/suhi_plot.r) for this part @fa[download text-green]
 
 <br>
-```bash
-#open RStudio from GRASS
-rstudio &
-```
+Open RStudio from GRASS with `rstudio &`
 
 +++?code=code/suhi_plot.r&lang=r&title=Plotting GRASS GIS maps in R
 
