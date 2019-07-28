@@ -425,7 +425,7 @@ We need:
 @snapend
 
 @snap[west span-60 text-09]
-@ul
+@ul[](false)
 - Air temperature of an urban area is higher than that in nearby areas
 - UHI has negative effects on water and air quality, biodiversity, human health, and climate
 - SUHI is also highly related to health, since it influences UHI 
