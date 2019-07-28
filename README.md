@@ -3,19 +3,12 @@
 <sub>Verónica Andreo<sup>1</sup>, Martin Landa<sup>2</sup>, Ondřej Pešek<sup>3</sup>, Markus Neteler<sup>4</sup>, Luca Delucchi<sup>5</sup> & Moritz Lennert<sup>6</sup></sub>
 
 <sub>
-<ul>
-<li><sup>1</sup> Instituto Nacional de Medicina Tropical (INMeT) - Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET). Puerto Iguazú, Argentina.</li>
-
-<li><sup>2</sup> Czech Technical University in Prague. Czech Republic.</li>
-
-<li><sup>3</sup> JRC - The Joint Research Centre. Ispra, Italy.</li>
-
-<li><sup>4</sup> mundialis GmbH & Co. KG. Bonn, Germany.</li>
-
-<li><sup>5</sup> Fondazione Edmund Mach. San Michele all’Adige, Italy.</li>
-
-<li><sup>6</sup> Université Libre de Bruxelles. Belgium.</li>
-</ul>   
+<sup>1</sup> Instituto Nacional de Medicina Tropical (INMeT) - Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET). Puerto Iguazú, Argentina.
+<sup>2</sup> Czech Technical University in Prague. Czech Republic.
+<sup>3</sup> JRC - Joint Research Centre. Ispra, Italy.
+<sup>4</sup> mundialis GmbH & Co. KG. Bonn, Germany.
+<sup>5</sup> Fondazione Edmund Mach. San Michele all’Adige, Italy.
+<sup>6</sup> Université Libre de Bruxelles. Belgium.
 </sub>
 
 
