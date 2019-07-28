@@ -10,6 +10,7 @@
 <li><sup>4</sup> mundialis GmbH & Co. KG. Bonn, Germany.</li>
 <li><sup>5</sup> Fondazione Edmund Mach. San Michele all’Adige, Italy.</li>
 <li><sup>6</sup> Université Libre de Bruxelles. Belgium.</li>
+</ul>
 </sub>
 
 
