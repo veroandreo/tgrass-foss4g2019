@@ -96,7 +96,7 @@ STDS in each mapset.
 ### @fa[download text-green] get the data and the code @fa[download text-green]
 <br>
 - [modis_lst mapset (2Mb)](https://gitlab.com/veroandreo/grass-gis-geostat-2018/blob/master/data/modis_lst.zip): download and unzip within `$HOME/grassdata/nc_spm_08_grass7`
-- [GRASS code](https://gitlab.com/veroandreo/grass-gis-conae/raw/master/code/05_temporal_code.sh?inline=false)
+- [GRASS code](https://github.com/veroandreo/tgrass-foss4g2019/blob/master/code/05_temporal_code.sh?inline=false)
 
 <br>
 ... and start GRASS GIS @fa[grin-hearts text-pink fa-spin]
@@ -155,12 +155,12 @@ STDS in each mapset.
 
 +++
 
-<img src="assets/img/g_gui_timeline_monthly.png" width="70%">
-
 @size[20px](Monthly LST for the period 2015-2017)
 
+<img src="assets/img/g_gui_timeline_monthly.png" width="70%">
+
 <br><br>
-@size[24px](See <a href="https://grass.osgeo.org/grass76/manuals/g.gui.timeline.html">g.gui.timeline</a> manual page)
+@size[20px](See <a href="https://grass.osgeo.org/grass76/manuals/g.gui.timeline.html">g.gui.timeline</a> manual page)
 
 ---
 
@@ -418,8 +418,6 @@ We need:
 
 ![Anomalies animation](assets/img/anomalies.gif)
 
-@size[20px](Anual anomalies in mean LST)
-
 ---
 
 @snap[north span-100]
@@ -462,7 +460,7 @@ We need:
 
 +++
 
-@img[span-70](assets/img/suhi_buffers.png)
+@img[span-60](assets/img/suhi_buffers.png)
 
 <br>
 @size[20px](Raleigh city boundary and surrounding rural area)
@@ -481,7 +479,7 @@ We will use **R** and **RStudio** to create a nice and easy plot with the result
 
 <br><br>
 In the GRASS GIS terminal type:
-<br>
+<br><br>
 `rstudio &`
 
 +++?code=code/suhi_plot.r&lang=r&title=Plotting GRASS GIS maps in R
