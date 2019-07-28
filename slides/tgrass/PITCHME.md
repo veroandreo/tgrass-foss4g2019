@@ -1,7 +1,7 @@
 ---?image=assets/img/grass_template.png&position=bottom&size=100% 30%
 @title[Front page]
 
-@snap[midpoint span-100]
+@snap[north span-100]
 <h1>Spatio-temporal data processing & visualization in @color[green](GRASS GIS)</h1>
 @snapend
 
@@ -449,51 +449,87 @@ We need:
 <br>
 - Allows to obtain spatially aggregated time series data for polygons in a vector map
 
-+++?code=code/05_temporal_code.sh&lang=bash&title=Extract mean LST for Raleigh (NC) urban area
++++?code=code/05_temporal_code.sh&lang=bash&title=Extract summer average LST for Raleigh (NC) urban area
 
 @[392-393](Install v.strds.stats add-on)
 @[395-398](Extract summer average LST for Raleigh urban area)
 
 +++?code=code/05_temporal_code.sh&lang=bash&title=Summer SUHI for the city of Raleigh and surroundings
 
-@[409-412](Create outside buffer - 15km)
-@[414-417](Create otside buffer - 3km)
-@[419-423](Remove 3km buffer area from the 15km buffer area)
+@[409-412](Create outside buffer - 30km)
+@[414-417](Create otside buffer - 15km)
+@[419-423](Remove 15km buffer area from the 30km buffer area)
 
 +++
 
 ![SUHI buffers](assets/img/suhi_buffers.png)
 
 <br>
-@size[20px](Raleigh city boundary and surrounding area)
+@size[20px](Raleigh city boundary and surrounding rural area)
 
 +++?code=code/05_temporal_code.sh&lang=bash&title=Summer SUHI for the city of Raleigh and surroundings
 
 @[425-430](Extract zonal stats for Raleigh surroundings)
-@[432-434](Take a look at mean summer LST in Raleigh and surroundings)
+@[432-434](Take a look at summer average LST in Raleigh and surroundings)
 
 +++
 
 We'll use R to create a nice and easy plot with the resulting vector maps
 
+<br>
+@fa[download text-green] Download the [R code](https://github.com/veroandreo/tgrass-foss4g2019/blob/master/code/suhi_plot.r) for this part @fa[download text-green]
+
+<br>
 ```bash
 #open RStudio from GRASS
 rstudio &
 ```
 
-@fa[download text-green] Download the [R code]() for this part @fa[download text-green]
++++?code=code/suhi_plot.r&lang=r&title=Plotting GRASS GIS maps in R
+
+@[7-11](Load rgrass library and list vectors)
+@[13-15](Import GRASS GIS vector maps)
+@[17-19](Quick plot with spplot)
 
 +++
 
-Once in RStudio
+@img[span-60](assests/img/spplot1.png)
+@img[span-60](assests/img/spplot2.png)
 
-@[]()
-@[]()
-@[]()
++++?code=code/suhi_plot.r&lang=r&title=Plotting GRASS GIS maps in R
+
+@[22-25](Convert to sf)
+@[27-29](Remove extra columns)
+@[31-32](Paste the 2 vectors together, columns are the same)
+@[34-35](Quick sf plot)
+
++++
+
+![ggplot2 map](assests/img/sf_plot.png)
+
++++?code=code/suhi_plot.r&lang=r&title=Plotting GRASS GIS maps in R
+
+@[38-41](Using ggplot library)
+@[43-50](Arrange data from wide to long format)
+@[52-53](Replace values in YEAR column)
+@[55-61](Plot)
+
++++
+
+![ggplot2 map](assests/img/ggplot.png)
+
++++?code=code/suhi_plot.r&lang=r&title=Plotting GRASS GIS maps in R
+
+@[64-66](Quick visualization of maps and basemaps with mapview)
+
++++
+
+@img[span-40](assets/img/raleigh_mapview1.png)
+@img[span-40](assets/img/raleigh_mapview2.png)
 
 ---
 
-### QUESTIONS?
+## QUESTIONS?
 
 <img src="assets/img/gummy-question.png" width="45%">
 
