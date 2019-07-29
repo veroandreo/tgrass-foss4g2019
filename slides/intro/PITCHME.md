@@ -468,6 +468,11 @@ GRASS GIS and R can be used together in two ways:
 - [Web Processing Service](https://en.wikipedia.org/wiki/Web_Processing_Service) is an [OGC](https://en.wikipedia.org/wiki/Open_Geospatial_Consortium) standard. 
 - [ZOO-Project](http://zoo-project.org/) and [PyWPS](http://pywps.org/) allow the user to run GRASS GIS commands in a simple way through the web.
 
+
++++
+
+Shall we add Actinia here as in Vashek presentation: https://wenzeslaus.github.io/grass-gis-talks/ncgis2019_getting_started.html#/15 ?
+
 ---
 
 ## Some useful commands and cool stuff

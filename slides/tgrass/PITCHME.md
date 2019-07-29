@@ -10,6 +10,7 @@
 @snapend
 
 ---
+@title[First FOSS GIS with time support]
 
 @color[#8EA33B](GRASS GIS) is **the first FOSS GIS** that incorporated
 capabilities to **manage, analyze, process and visualize spatio-temporal
@@ -22,6 +23,7 @@ Note:
 - bla, bla
 
 +++
+@title[The TGRASS framework]
 
 ## The TGRASS framework
 
@@ -40,6 +42,7 @@ STDS in each mapset.
 --->
 
 +++
+@title[STDS]
 
 ## Space-time datasets
 
@@ -51,6 +54,7 @@ STDS in each mapset.
 @fa[layer-group fa-3x text-green]
 
 +++
+@title[Other TGRASS notions]
 
 ## Other TGRASS notions
 
@@ -77,6 +81,7 @@ STDS in each mapset.
 <img src="assets/img/temp_samplings.png" width="55%">
 
 +++
+@title[Temporal modules]
 
 ## @fa[tools text-green] Spatio-temporal modules
 
@@ -86,16 +91,19 @@ STDS in each mapset.
 - @color[#8EA33B](**t.vect.\***): Modules that deal with STVDS
 
 ---?image=assets/img/grass_template.png&position=bottom&size=100% 30%
+@title[TGRASS workflow]
 
 ## TGRASS framework and workflow
 
 +++?image=assets/img/tgrass_flowchart.png&position=center&size=auto 93%
 
 ---?image=assets/img/grass_template.png&position=bottom&size=100% 30%
+@title[Hands-on to TGRASS]
 
 ## Hands-on to raster time series in GRASS GIS
 
 ---
+@title[Get data and code]
 
 ### @fa[download text-green] get the data and the code @fa[download text-green]
 <br>
@@ -107,12 +115,14 @@ STDS in each mapset.
 
 
 ---?code=code/05_temporal_code.sh&lang=bash&title=Set computational region and apply MASK
+@title[GRASS GIS first settings]
 
 @[32-40](List raster maps and get info)
 @[43-61](Set computational region)
 @[63-67](Set a MASK to focus only on NC state)
 
 ---
+@title[Create STRDS]
 
 ### Create a temporal dataset (STDS)
 
@@ -131,6 +141,7 @@ STDS in each mapset.
 @[80-81](Get info about the STRDS)
 
 ---  
+@title[Assign timestamps]
 
 ### Register maps into the STRDS
 
@@ -167,6 +178,7 @@ STDS in each mapset.
 @size[20px](See <a href="https://grass.osgeo.org/grass76/manuals/g.gui.timeline.html">g.gui.timeline</a> manual page)
 
 ---
+@title[Temporal algebra]
 
 ### Operations with temporal algebra
 
@@ -202,6 +214,7 @@ STDS in each mapset.
 @size[24px](Point coordinates can be typed directly, copied from the map display and pasted or directly chosen from the main map display.)
 
 ---
+@title[Selection and lists]
 
 ### Lists and selections
 
@@ -222,12 +235,14 @@ id, name, layer, creator, mapset, temporal_type, creation_time, start_time, end_
 @[170-177](Maps from January)
 
 ---?code=code/05_temporal_code.sh&lang=bash&title=Descriptive statistics of LST time series
+@title[Descriptive statistics]
 
 @[182-190](Print univariate stats for maps within STRDS)
 @[192-193](Get extended statistics)
 @[195-197](Write the univariate stats output to a csv file)
 
 ---
+@title[Temporal aggregation 1]
 
 ### Temporal aggregation 1: Using the full time series
 
@@ -255,6 +270,7 @@ id, name, layer, creator, mapset, temporal_type, creation_time, start_time, end_
 ![mapswipe and lst min](assets/img/g_gui_mapswipe_lstmin.png)
 
 ---
+@title[Temporal operations with time variables]
 
 ### Temporal operations using time variables
 
@@ -288,6 +304,7 @@ id, name, layer, creator, mapset, temporal_type, creation_time, start_time, end_
 ![Month of maximum LST](assets/img/month_max_lst.png)
 
 ---
+@title[Temporal aggregation 2]
 
 ### Temporal aggregation 2: using granularity
 
@@ -314,7 +331,7 @@ g.gui.timeline inputs=LST_Day_monthly_celsius,LST_Day_mean_3month
 ```
 
 <br>
-@img[span-80](assets/img/g_gui_timeline_monthly_seasonal.png)
+@img[span-75](assets/img/g_gui_timeline_monthly_seasonal.png)
 
 +++?code=code/05_temporal_code.sh&lang=bash&title=Display seasonal LST using frames in wx monitor
 
@@ -356,7 +373,7 @@ t.rast.series input=month_max_LST_per_year \
 
 +++
 
-add fig
+@img[spann-90](assets/img/slope_max_lst_occurrence.png)
 
 ---
 
@@ -371,6 +388,7 @@ add fig
 @size[20px](See <a href="https://grass.osgeo.org/grass76/manuals/g.gui.animation.html">g.gui.animation</a> manual for further options and tweaks)
 
 ---
+@title[Aggregation vs Climatology]
 
 @snap[north span-100]
 <h3>Aggregation vs Climatology</h3>
@@ -399,6 +417,7 @@ Climatology-type aggregation
 > @fa[tasks] **Task**: Compare monthly means with "climatological" means
 
 ---
+@title[Anomalies]
 
 ### Annual anomalies
 <br>
@@ -427,6 +446,7 @@ We need:
 ![Anomalies animation](assets/img/anomalies.gif)
 
 ---
+@title[SUHI and zonal stats]
 
 @snap[north span-100]
 ### Surface Urban Heat Island (SUHI)
@@ -478,6 +498,7 @@ We need:
 @[432-434](Take a look at summer average LST in Raleigh and surroundings)
 
 +++
+@title[GRASS and R to plot maps]
 
 We will use **R** and **RStudio** to create a nice and easy plot with the resulting vector maps
 
@@ -532,12 +553,14 @@ In the GRASS GIS terminal type:
 @img[span-40](assets/img/raleigh_mapview2.png)
 
 ---
+@title[Questions]
 
 ## QUESTIONS?
 
 <img src="assets/img/gummy-question.png" width="45%">
 
 ---
+@title[Useful resources]
 
 ## Other (very) useful resources
 
@@ -549,6 +572,7 @@ In the GRASS GIS terminal type:
 - [GRASS GIS course in Argentina 2018](https://gitlab.com/veroandreo/curso-grass-gis-rioiv)
 
 ---
+@title[References]
 
 ## References
 
@@ -563,6 +587,7 @@ In the GRASS GIS terminal type:
 <p style="color:white">Join and enjoy GRASS GIS!!</p>
 
 ---
+@title[Thanks]
 
 **Thanks for your attention!!**
 
