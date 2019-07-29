@@ -373,7 +373,7 @@ t.rast.series input=month_max_LST_per_year \
 
 +++
 
-@img[spann-90](assets/img/slope_max_lst_occurrence.png)
+@img[spann-70](assets/img/slope_max_lst_occurrence.png)
 
 ---
 
