@@ -17,6 +17,10 @@ data**, as well as the temporal relationships among time series.
 <br><br>
 @fa[layer-group fa-3x text-green]
 
+Note:
+- bla, bla
+- bla, bla
+
 +++
 
 ## The TGRASS framework
