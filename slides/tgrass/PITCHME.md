@@ -350,6 +350,10 @@ t.rast.series input=month_max_LST_per_year \
   method=slope
 ```
 
++++
+
+add fig
+
 ---
 
 ### Animations
@@ -368,13 +372,13 @@ t.rast.series input=month_max_LST_per_year \
 <h3>Aggregation vs Climatology</h3>
 @snapend
 
-@snap[west span-45]
+@snap[west span-45 fragment]
 <img src="assets/img/aggregation.png">
 <br>
 Granularity aggregation
 @snapend
 
-@snap[east span-50]
+@snap[east span-50 fragment]
 <img src="assets/img/climatology.png">
 <br>
 Climatology-type aggregation
@@ -460,9 +464,8 @@ We need:
 
 +++
 
-<img src="assets/img/suhi_buffers.png" width="70%">
+@img[span-50](assets/img/suhi_buffers.png)
 
-<br>
 @size[20px](Raleigh city boundary and surrounding rural area)
 
 +++?code=code/05_temporal_code.sh&lang=bash&title=Summer SUHI for the city of Raleigh and surroundings
