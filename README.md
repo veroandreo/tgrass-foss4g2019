@@ -74,7 +74,7 @@ There are two different options:
 1. Standalone installer: [32-bit version](https://grass.osgeo.org/grass76/binary/mswindows/native/x86/WinGRASS-7.6.1-1-Setup-x86.exe) | [64-bit version](https://grass.osgeo.org/grass76/binary/mswindows/native/x86_64/WinGRASS-7.6.1-1-Setup-x86_64.exe) 
 2. OSGeo4W package (network installer): [32-bit version](http://download.osgeo.org/osgeo4w/osgeo4w-setup-x86.exe) | [64-bit version](http://download.osgeo.org/osgeo4w/osgeo4w-setup-x86_64.exe) 
 
-For Windows users, **we strongly recommend installing GRASS GIS through the OSGeo4W package**, 
+For Windows users, **we strongly recommend installing GRASS GIS through the OSGeo4W package** (second option), 
 since it allows to install all OSGeo software. If you choose this option, 
 *make sure you select GRASS GIS and msys*. The latter one will allow 
 the use of loops, back ticks, autocomplete, history and other nice bash shell
@@ -117,6 +117,17 @@ Install with `g.extension extension=name_of_addon`
 
 * [North Carolina location (full dataset, 150Mb)](https://grass.osgeo.org/sampledata/north_carolina/nc_spm_08_grass7.zip): download and unzip within `$HOME/grassdata`.
 * [modis_lst mapset (2Mb)](https://gitlab.com/veroandreo/curso-grass-gis-rioiv/raw/master/data/modis_lst.zip?inline=false): download and unzip within the North Carolina location in `$HOME/grassdata/nc_spm_08_grass7`.
+
+Your `grassdata` folder should look like this:
+
+```
+  grassdata/
+   ├── nc_spm_08_grass7
+     ├── landsat
+     ├── modis_lst
+     ├── PERMANENT
+     └── user1
+```
 
 ## References
 
