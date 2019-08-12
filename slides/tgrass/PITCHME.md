@@ -18,9 +18,6 @@ data**, as well as the temporal relationships among time series.
 <br><br>
 @fa[layer-group fa-3x text-green]
 
-Note:
-- bla, bla
-- bla, bla
 
 +++
 @title[The TGRASS framework]
@@ -41,17 +38,19 @@ of STDS, as well as the topological relationships among maps and among
 STDS in each mapset.
 --->
 
+
 +++
 @title[STDS]
 
-## Space-time datasets
+## @fa[layer-group text-green] Space-time datasets
 
 - Space time raster datasets (**ST@color[#8EA33B](R)DS**)
 - Space time 3D raster datasets (**ST@color[#8EA33B](R3)DS**)
 - Space time vector datasets (**ST@color[#8EA33B](V)DS**)
 
-<br><br>
-@fa[layer-group fa-3x text-green]
+<br><br><br>
+@fa[bullhorn text-green] Suppot for [**image collections**](https://github.com/OSGeo/grass/pull/63) is on the way! 
+
 
 +++
 @title[Other TGRASS notions]
@@ -64,21 +63,22 @@ STDS in each mapset.
 - @color[#8EA33B](Granularity) is the greatest common divisor of the temporal extents (and possible gaps) of all maps in the space-time cube
 @ulend
 
-+++
 
++++
 ### Other TGRASS notions
 
 - @color[#8EA33B](Topology) refers to temporal relations between time intervals in a STDS.
 
 <img src="assets/img/temp_relation.png">
 
-+++
 
++++
 ### Other TGRASS notions
 
 - @color[#8EA33B](Temporal sampling) is used to determine the state of one process during a second process.
 
 <img src="assets/img/temp_samplings.png" width="55%">
+
 
 +++
 @title[Temporal modules]
@@ -90,28 +90,76 @@ STDS in each mapset.
 - @color[#8EA33B](**t.rast3d.\***): Modules that deal with STR3DS
 - @color[#8EA33B](**t.vect.\***): Modules that deal with STVDS
 
+
 ---?image=assets/img/grass_template.png&position=bottom&size=100% 30%
 @title[TGRASS workflow]
 
 ## TGRASS framework and workflow
 
+
 +++?image=assets/img/tgrass_flowchart.png&position=center&size=auto 93%
+
 
 ---?image=assets/img/grass_template.png&position=bottom&size=100% 30%
 @title[Hands-on to TGRASS]
 
 ## Hands-on to raster time series in GRASS GIS
 
----
-@title[Get data and code]
 
-### @fa[download text-green] get the data and the code @fa[download text-green]
+---
+@title[Sample location]
+
+@snap[north span-100]
+### Sample location: North Carolina
+@snapend
+
+@snap[west span-60]
+<br>
+@ul[](false)
+- Download the [**North Carolina full dataset**](https://grass.osgeo.org/sampledata/north_carolina/nc_spm_08_grass7.zip)
+- Create a folder in your `$HOME` directory (or Documents) and name it `grassdata`
+- Unzip the file `nc_spm_08_grass7.zip` within `grassdata`
+@ulend
+@snapend
+
+@snap[east span-40]
+<br><br>
+<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-92.32910156250001%2C31.297327991404266%2C-73.98193359375001%2C38.89103282648846&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=7/35.183/-83.156">View Larger Map</a></small>
+@snapend
+
+
++++
+@title[Sample mapset and code]
+
+@snap[north span-100]
+### Data for the session</h3>
+@snapend
+
+@snap[west span-50]
+@ul[](false)
+- LST Day from <a href="https://lpdaac.usgs.gov/products/mod11b3v006/">MOD11B3 Collection 6</a>
+- Tiled monthly composites (h11v05)
+- Spatial resolution: 5600m
+- Selected time period: 2015 - 2017 
+@ulend
+@snapend
+
+@snap[east span-50]
+![LST tile](assets/img/modis_lst_tile.png)
+@snapend
+
+
++++
+### @fa[download text-green] get sample mapset and code @fa[download text-green]
+
 <br>
 - [modis_lst mapset (2Mb)](https://gitlab.com/veroandreo/grass-gis-geostat-2018/blob/master/data/modis_lst.zip): download and unzip within `$HOME/grassdata/nc_spm_08_grass7`
 - [GRASS code](https://github.com/veroandreo/tgrass-foss4g2019/blob/master/code/05_temporal_code.sh)
 
-<br>
-... and start GRASS GIS @fa[grin-hearts text-pink fa-spin]
+
+---?image=assets/img/grass_template.png&position=bottom&size=100% 30%
+
+## Let's start GRASS GIS! @fa[grin-hearts text-15 text-pink fa-spin]
 
 
 ---?code=code/05_temporal_code.sh&lang=bash&title=Set computational region and apply MASK
@@ -120,6 +168,7 @@ STDS in each mapset.
 @[32-40](List raster maps and get info)
 @[43-61](Set computational region)
 @[63-67](Set a MASK to focus only on NC state)
+
 
 ---
 @title[Create STRDS]
@@ -134,11 +183,13 @@ STDS in each mapset.
   - *type of maps* (raster, raster3d or vector)
   - *type of time* (absolute or relative)
 
+
 +++?code=code/05_temporal_code.sh&lang=bash&title=Create a raster time series (STRDS)
 
 @[70-75](Create the STRDS)
 @[77-78](Check if the STRDS is created)
 @[80-81](Get info about the STRDS)
+
 
 ---  
 @title[Assign timestamps]
@@ -154,6 +205,7 @@ STDS in each mapset.
   - the *start date*,
   - *increment* option along with the *-i* flag for interval creation 
 
+
 +++?code=code/05_temporal_code.sh&lang=bash&title=Register maps in STRDS (assign time stamps)
 
 @[84-89](Add time stamps to maps, i.e., register maps - *nix)
@@ -161,21 +213,20 @@ STDS in each mapset.
 @[96-97](Check info again)
 @[99-100](Check the list of maps in the STRDS)
 @[102-103](Check min and max per map)
+@[106-107](Graphical representation of the time series)
 
 @size[20px](For more options, check the <a href="https://grass.osgeo.org/grass76/manuals/t.register.html">t.register</a> manual and related <a href="https://grasswiki.osgeo.org/wiki/Temporal_data_processing/maps_registration">map registration wiki</a> page.)
 
-+++?code=code/05_temporal_code.sh&lang=bash&title=Graphical Representation of the STRDS
-
-@[106-107](Graphical representation of the time series)
 
 +++
-
 @size[20px](Monthly LST for the period 2015-2017)
 
+<br>
 <img src="assets/img/g_gui_timeline_monthly.png" width="70%">
 
-<br><br>
+<br>
 @size[20px](See <a href="https://grass.osgeo.org/grass76/manuals/g.gui.timeline.html">g.gui.timeline</a> manual page)
+
 
 ---
 @title[Temporal algebra]
@@ -196,22 +247,21 @@ STDS in each mapset.
 @ulend
 **@size[30px](they can all be combined in complex expressions!!)** @fa[bomb] 
 
+
 +++?code=code/05_temporal_code.sh&lang=bash&title=From K*50 to Celsius using the temporal calculator
 
 @[110-114](Re-scale data to degrees Celsius)
 @[116-117](Check info)
-
-+++?code=code/05_temporal_code.sh&lang=bash&title=Time series plot
-
 @[120-127](LST time series plot for the city center of Raleigh)
 
-@size[20px](For a single point, see <a href="https://grass.osgeo.org/grass76/manuals/g.gui.tplot.html">g.gui.tplot</a>. For a vector of points, see <a href="https://grass.osgeo.org/grass76/manuals/t.rast.what.html">t.rast.what</a>.)
 
 +++
-
 <img src="assets/img/g_gui_tplot_final.png" width="80%">
 
-@size[24px](Point coordinates can be typed directly, copied from the map display and pasted or directly chosen from the main map display.)
+@size[24px](Point coordinates can be typed directly, copied from the map display or directly chosen from the main map display.)
+<br><br>
+@size[20px](For a single point, see <a href="https://grass.osgeo.org/grass76/manuals/g.gui.tplot.html">g.gui.tplot</a>. For a vector of points, see <a href="https://grass.osgeo.org/grass76/manuals/t.rast.what.html">t.rast.what</a>.)
+
 
 ---
 @title[Selection and lists]
@@ -227,12 +277,14 @@ id, name, creator, mapset, temporal_type, creation_time, start_time, end_time, n
 id, name, layer, creator, mapset, temporal_type, creation_time, start_time, end_time, north, south, west, east, points, lines, boundaries, centroids, faces, kernels, primitives, nodes, areas, islands, holes, volumes
 --->
 
+
 +++?code=code/05_temporal_code.sh&lang=bash&title=Listing examples
 
 @[132-143](Maps with minimum value lower than or equal to 5)
 @[145-158](Maps with maximum value higher than 30)
 @[160-168](Maps between two given dates)
 @[170-177](Maps from January)
+
 
 ---?code=code/05_temporal_code.sh&lang=bash&title=Descriptive statistics of LST time series
 @title[Descriptive statistics]
@@ -256,18 +308,16 @@ id, name, layer, creator, mapset, temporal_type, creation_time, start_time, end_
 @[202-204](Get maximum LST in the STRDS)
 @[206-208](Get minimum LST in the STRDS)
 @[210-211](Change color pallete to celsius)
-
-+++?code=code/05_temporal_code.sh&lang=bash&title=Compare maps with the Mapswipe tool
-
 @[214-220](Display the new maps with mapswipe and compare them to elevation)
 
-+++
 
++++
 ![mapswipe and lst max](assets/img/g_gui_mapswipe_lstmax.png)
 
-+++
 
++++
 ![mapswipe and lst min](assets/img/g_gui_mapswipe_lstmin.png)
+
 
 ---
 @title[Temporal operations with time variables]
@@ -286,11 +336,6 @@ id, name, layer, creator, mapset, temporal_type, creation_time, start_time, end_
 @[230-231](Get basic info)
 @[233-234](Get the earliest month in which the maximum appeared)
 @[236-241](Remove month_max_lst strds)
-
-@size[24px](We could do this year-wise to know when the annual max LST occurs and assess trends)
-
-+++?code=code/05_temporal_code.sh&lang=bash&title=Display the resulting map from the CLI
-
 @[244-247](Open a monitor)
 @[249-250](Display raster map)
 @[252-253](Display only boundary of vector map)
@@ -299,9 +344,10 @@ id, name, layer, creator, mapset, temporal_type, creation_time, start_time, end_
 @[262-263](Add North arrow)
 @[265-267](Add title text)
 
-+++
 
++++
 ![Month of maximum LST](assets/img/month_max_lst.png)
+
 
 ---
 @title[Temporal aggregation 2]
@@ -314,24 +360,22 @@ id, name, layer, creator, mapset, temporal_type, creation_time, start_time, end_
 - *where* option allows to set specific dates for the aggregation
 - Different methods available: average, minimum, maximum, median, mode, etc.
 
+
 +++?code=code/05_temporal_code.sh&lang=bash&title=From monthly to seasonal LST
 
 @[270-276](3-month mean LST)
 @[278-279](Check info)
 @[281-296](Check map list)
+@[336-339](Animation of seasonal LST time series)
+
 
 +++
-
-> @fa[tasks] **Task**: Compare the monthly and seasonal timelines with [g.gui.timeline](https://grass.osgeo.org/grass76/manuals/g.gui.timeline.html)
-
-+++
-
-```bash
-g.gui.timeline inputs=LST_Day_monthly_celsius,LST_Day_mean_3month
-```
+![Animation 3month LST](assets/img/3month_lst_anim_small.gif)
 
 <br>
-@img[span-75](assets/img/g_gui_timeline_monthly_seasonal.png)
+@size[20px](See <a href="https://grass.osgeo.org/grass76/manuals/g.gui.animation.html">g.gui.animation</a> manual for further options and tweaks)
+
+
 
 +++?code=code/05_temporal_code.sh&lang=bash&title=Display seasonal LST using frames in wx monitor
 
@@ -349,14 +393,14 @@ g.gui.timeline inputs=LST_Day_monthly_celsius,LST_Day_mean_3month
 
 @size[24px](3-month average LST in 2015)
 
----
 
+---
 > @fa[tasks] **Task**: Now that you know [t.rast.aggregate](https://grass.osgeo.org/grass76/manuals/t.rast.aggregate.html), 
 > extract the month of maximum LST per year and then test if there's any positive or 
 > negative trend, i.e., if maximum LST values are observed later or earlier with time (years)
 
-+++
 
++++
 One solution could be...
 
 <br><br>
@@ -371,27 +415,16 @@ t.rast.series input=month_max_LST_per_year \
   method=slope
 ```
 
+
 +++
+@img[span-70](assets/img/slope_max_lst_occurrence.png)
 
-@img[spann-70](assets/img/slope_max_lst_occurrence.png)
-
----
-
-### Animations
-
-![Animation 3month LST](assets/img/3month_lst_anim_small.gif)
-
-+++?code=code/05_temporal_code.sh&lang=bash&title=Animation of seasonal LST time series
-
-@[336-339](Animation of seasonal LST)
-
-@size[20px](See <a href="https://grass.osgeo.org/grass76/manuals/g.gui.animation.html">g.gui.animation</a> manual for further options and tweaks)
 
 ---
 @title[Aggregation vs Climatology]
 
 @snap[north span-100]
-<h3>Aggregation vs Climatology</h3>
+### Aggregation vs Climatology
 @snapend
 
 @snap[west span-45 fragment]
@@ -406,20 +439,18 @@ Granularity aggregation
 Climatology-type aggregation
 @snapend
 
+
 +++?code=code/05_temporal_code.sh&lang=bash&title=Monthly climatologies
 
 @[344-347](January average LST)
 @[349-354](Climatology for all months - *nix)
 @[356-361](Climatology for all months - windows)
 
-+++
-
-> @fa[tasks] **Task**: Compare monthly means with "climatological" means
 
 ---
 @title[Anomalies]
 
-### Annual anomalies
+### Annual standardized anomalies
 <br>
 
 `\[
@@ -430,7 +461,8 @@ StdAnomaly_i = \frac{Average_i - Average}{SD}
 We need:
 
 - overall average and standard deviation
-- yearly averages
+- annual averages
+
 
 +++?code=code/05_temporal_code.sh&lang=bash&title=Annual anomalies
 
@@ -441,9 +473,10 @@ We need:
 @[383-384](Set color table)
 @[386-387](Animation)
 
-+++
 
++++
 ![Anomalies animation](assets/img/anomalies.gif)
+
 
 ---
 @title[SUHI and zonal stats]
@@ -467,35 +500,35 @@ We need:
 @size[16px](SUHI and surrounding rural area for Buenos Aires city. Source <a href="https://www.mdpi.com/2072-4292/11/10/1212/htm">Wu et al, 2019.</a>)
 @snapend
 
-+++
 
++++
 ### Zonal statistics in raster time series
 
 **[v.strds.stats](https://grass.osgeo.org/grass7/manuals/addons/v.strds.stats.html)**
 <br>
 - Allows to obtain spatially aggregated time series data for polygons in a vector map
 
-+++?code=code/05_temporal_code.sh&lang=bash&title=Extract summer average LST for Raleigh (NC) urban area
-
-@[392-393](Install v.strds.stats add-on)
-@[395-398](Extract summer average LST for Raleigh urban area)
 
 +++?code=code/05_temporal_code.sh&lang=bash&title=Summer SUHI for the city of Raleigh and surroundings
 
+@[392-393](Install v.strds.stats add-on)
+@[395-398](Extract summer average LST for Raleigh urban area)
 @[409-412](Create outside buffer - 30km)
 @[414-417](Create otside buffer - 15km)
 @[419-423](Remove 15km buffer area from the 30km buffer area)
 
-+++
 
++++
 @img[span-50](assets/img/suhi_buffers.png)
 
 @size[20px](Raleigh city boundary and surrounding rural area)
 
+
 +++?code=code/05_temporal_code.sh&lang=bash&title=Summer SUHI for the city of Raleigh and surroundings
 
 @[425-430](Extract zonal stats for Raleigh surroundings)
-@[432-434](Take a look at summer average LST in Raleigh and surroundings)
+@[432-438](Take a look at summer average LST in Raleigh and surroundings)
+
 
 +++
 @title[GRASS and R to plot maps]
@@ -510,27 +543,20 @@ In the GRASS GIS terminal type:
 <br><br>
 `rstudio &`
 
+
 +++?code=code/suhi_plot.r&lang=r&title=Plotting GRASS GIS maps in R
 
 @[7-11](Load rgrass library and list vectors)
 @[13-15](Import GRASS GIS vector maps)
-@[17-19](Quick plots with spplot)
-
-+++
-
-@img[span-60](assets/img/spplot1.png)
-@img[span-60](assets/img/spplot2.png)
-
-+++?code=code/suhi_plot.r&lang=r&title=Plotting GRASS GIS maps in R
-
 @[22-25](Convert to sf)
 @[27-29](Remove extra columns)
 @[31-32](Paste the 2 vectors together, columns are the same)
 @[34-35](Quick sf plot)
 
-+++
 
-![ggplot2 map](assets/img/sf_plot.png)
++++
+![sf map](assets/img/sf_plot.png)
+
 
 +++?code=code/suhi_plot.r&lang=r&title=Plotting GRASS GIS maps in R
 
@@ -539,18 +565,20 @@ In the GRASS GIS terminal type:
 @[52-53](Replace values in YEAR column)
 @[55-61](Plot)
 
-+++
 
++++
 ![ggplot2 map](assets/img/ggplot.png)
+
 
 +++?code=code/suhi_plot.r&lang=r&title=Plotting GRASS GIS maps in R
 
 @[64-66](Quick visualization of maps and basemaps with mapview)
 
-+++
 
++++
 @img[span-40](assets/img/raleigh_mapview1.png)
 @img[span-40](assets/img/raleigh_mapview2.png)
+
 
 ---
 @title[Questions]
@@ -558,6 +586,7 @@ In the GRASS GIS terminal type:
 ## QUESTIONS?
 
 <img src="assets/img/gummy-question.png" width="45%">
+
 
 ---
 @title[Useful resources]
@@ -571,6 +600,7 @@ In the GRASS GIS terminal type:
 - [GRASS GIS course IRSAE 2018](http://training.gismentors.eu/grass-gis-irsae-winter-course-2018/index.html)
 - [GRASS GIS course in Argentina 2018](https://gitlab.com/veroandreo/curso-grass-gis-rioiv)
 
+
 ---
 @title[References]
 
@@ -580,11 +610,13 @@ In the GRASS GIS terminal type:
 - Gebbert, S., Pebesma, E. (2017). *The GRASS GIS temporal framework*. International Journal of Geographical Information Science 31, 1273-1292. [DOI](http://dx.doi.org/10.1080/13658816.2017.1306862)
 - Gebbert, S., Leppelt, T. and Pebesma, E. (2019). *A Topology Based Spatio-Temporal Map Algebra for Big Data Analysis*. Data, 4, 86. [DOI](https://doi.org/10.3390/data4020086)
 
+
 ---?image=assets/img/grass_sprint2018_bonn_fotowall_medium.jpg&size=cover
 
 @transition[zoom]
 
 <p style="color:white">Join and enjoy GRASS GIS!!</p>
+
 
 ---
 @title[Thanks]
@@ -593,8 +625,8 @@ In the GRASS GIS terminal type:
 
 ![GRASS GIS logo](assets/img/grass_logo_alphab.png)
 
----
 
+---
 @snap[south span-50]
 @size[18px](Presentation powered by)
 <br>
