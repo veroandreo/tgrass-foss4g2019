@@ -546,12 +546,12 @@ In the GRASS GIS terminal type:
 
 +++?code=code/suhi_plot.r&lang=r&title=Plotting GRASS GIS maps in R
 
-@[7-11](Load rgrass library and list vectors)
-@[13-15](Import GRASS GIS vector maps)
-@[22-25](Convert to sf)
-@[27-29](Remove extra columns)
-@[31-32](Paste the 2 vectors together, columns are the same)
-@[34-35](Quick sf plot)
+@[7-9](Load rgrass and sf libraries)
+@[11-12](List vectors in grassdata)
+@[14-17](Import GRASS GIS vector maps)
+@[19-21](Remove extra columns)
+@[23-24](Paste the 2 vectors together, columns are the same)
+@[26-27](Quick sf plot)
 
 
 +++
@@ -560,10 +560,10 @@ In the GRASS GIS terminal type:
 
 +++?code=code/suhi_plot.r&lang=r&title=Plotting GRASS GIS maps in R
 
-@[38-41](Using ggplot library)
-@[43-50](Arrange data from wide to long format)
-@[52-53](Replace values in YEAR column)
-@[55-61](Plot)
+@[30-33](Using ggplot library)
+@[35-42](Arrange data from wide to long format)
+@[44-45](Replace values in YEAR column)
+@[47-53](Plot)
 
 
 +++
@@ -572,7 +572,7 @@ In the GRASS GIS terminal type:
 
 +++?code=code/suhi_plot.r&lang=r&title=Plotting GRASS GIS maps in R
 
-@[64-66](Quick visualization of maps and basemaps with mapview)
+@[56-58](Quick visualization of maps and basemaps with mapview)
 
 
 +++
