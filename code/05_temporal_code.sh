@@ -9,22 +9,22 @@
 
 ########### Before the workshop (done for you in advance) ##############
 
-# Install i.modis add-on (requires pymodis library - www.pymodis.org)
-g.extension extension=i.modis
+#~ # Install i.modis add-on (requires pymodis library - www.pymodis.org)
+#~ g.extension extension=i.modis
 
-# Download and import MODIS LST data 
-# Note: User needs to be registered at Earthdata: 
-# https://urs.earthdata.nasa.gov/users/new
-i.modis.download settings=$HOME/gisdata/SETTING \
-  product=lst_terra_monthly_5600 \
-  tile=h11v05 \
-  startday=2015-01-01 endday=2017-12-31 \
-  folder=/tmp
+#~ # Download and import MODIS LST data 
+#~ # Note: User needs to be registered at Earthdata: 
+#~ # https://urs.earthdata.nasa.gov/users/new
+#~ i.modis.download settings=$HOME/gisdata/SETTING \
+  #~ product=lst_terra_monthly_5600 \
+  #~ tile=h11v05 \
+  #~ startday=2015-01-01 endday=2017-12-31 \
+  #~ folder=/tmp
 
-# Import LST Day 
-# optionally also LST Night: spectral="( 1 1 0 0 0 1 0 0 0 0 0 0 0 )"
-i.modis.import files=/tmp/listfileMOD11B3.006.txt \
-  spectral="( 1 0 0 0 0 0 0 0 0 0 0 0 )"
+#~ # Import LST Day 
+#~ # optionally also LST Night: spectral="( 1 1 0 0 0 1 0 0 0 0 0 0 0 )"
+#~ i.modis.import files=/tmp/listfileMOD11B3.006.txt \
+  #~ spectral="( 1 0 0 0 0 0 0 0 0 0 0 0 )"
 
 
 ############## For the workshop (what you have to do) ##################
@@ -267,7 +267,7 @@ d.text -b text="Month of maximum LST 2015-2017" \
   color=black align=cc font=sans size=12
 
 
-## Temporal aggregation ( with granularity)
+## Temporal aggregation (with granularity)
  
 # 3-month mean LST
 t.rast.aggregate input=LST_Day_monthly_celsius \
@@ -377,7 +377,7 @@ t.rast.aggregate input=LST_Day_monthly_celsius \
  output=LST_yearly_average basename=LST_yearly_average
 
 # Estimate annual anomalies
-t.rast.algebra basename=LST_year_anomaly \
+t.rast.algebra basename=LST_year_anomaly suffix=gran \
  expression="LST_year_anomaly = (LST_yearly_average - map(LST_average)) / map(LST_sd)"
 
 # Set difference color table

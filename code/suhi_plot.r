@@ -6,23 +6,15 @@
 
 # Load rgrass library
 library(rgrass7)
+library(sf)
 
 # List available vectors
 execGRASS("g.list", parameters = list(type="vector", mapset="."))
 
-# Read in GRASS vector maps
+# Read in GRASS vector maps as sf
+use_sf()
 raleigh_summer_lst <- readVECT("raleigh_summer_lst")
 raleigh_surr_summer_lst <- readVECT("raleigh_surr_summer_lst")
-
-# Quick and dirty plots
-spplot(raleigh_summer_lst[,c(7:9)])
-spplot(raleigh_surr_summer_lst[,c(4:6)])
-
-
-# Convert to sf (https://github.com/r-spatial/sf)
-library(sf)
-raleigh_summer_lst <- st_as_sf(raleigh_summer_lst)
-raleigh_surr_summer_lst <- st_as_sf(raleigh_surr_summer_lst)
 
 # Remove columns we don't need 
 raleigh_summer_lst <- raleigh_summer_lst[,-c(2:6)]
@@ -61,6 +53,6 @@ ggplot() +
   scale_y_continuous()
 
 
-# For quick visualizations with basemaps: mapview 
+# mapview for quick visualizations with basemaps is really cool!
 library(mapview)
 mapview(raleigh)
