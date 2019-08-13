@@ -482,7 +482,7 @@ GRASS GIS and R can be used together in two ways:
 
 
 +++
-@snap[north-west span-75]
+@snap[north-west span-80]
 ### *actinia*: The GRASS GIS REST API 
 @snapend
 
@@ -490,7 +490,7 @@ GRASS GIS and R can be used together in two ways:
 @img[span-60](https://wenzeslaus.github.io/grass-gis-talks/img/actinia_logo.svg)
 @snapend
 
-@snap[midpoint span-100 text-08]
+@snap[midpoint span-100]
 @ul[](false)
 - Open source REST API for scalable, distributed, high performance processing of geo data using GRASS GIS
 - Core functionality includes processing of geo-data and time series of satellite images, raster and vector data. 
@@ -498,13 +498,14 @@ GRASS GIS and R can be used together in two ways:
 @ulend
 @snapend
 
-@snap[south-west span-70 text-07]
+@snap[south-west span-70 text-09]
 Don't miss *actinia* talks at FOSS4G:
 <br>
 @ul[](false)
 - [GRASS GIS in the cloud: actinia geoprocessing](https://talks.2019.foss4g.org/bucharest/talk/GCNPMC/)
 - [How digging in the earth for the fibre roll-out took GRASS to the cloud](https://talks.2019.foss4g.org/bucharest/talk/U3DM9L/)
 @ulend
+<br><br>
 @snapend
 
 @snap[south-east span-30 text-05]
