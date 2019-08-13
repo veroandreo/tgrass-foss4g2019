@@ -496,16 +496,17 @@ GRASS GIS and R can be used together in two ways:
 - Core functionality includes processing of geo-data and time series of satellite images, raster and vector data. 
 - OSGeo Community Project since 2019
 @ulend
+<br>
 @snapend
 
-@snap[south-west span-70 text-09]
+@snap[south-west span-100 text-08]
 Don't miss *actinia* talks at FOSS4G:
 <br>
 @ul[](false)
 - [GRASS GIS in the cloud: actinia geoprocessing](https://talks.2019.foss4g.org/bucharest/talk/GCNPMC/)
 - [How digging in the earth for the fibre roll-out took GRASS to the cloud](https://talks.2019.foss4g.org/bucharest/talk/U3DM9L/)
 @ulend
-<br><br>
+<br>
 @snapend
 
 @snap[south-east span-30 text-05]
