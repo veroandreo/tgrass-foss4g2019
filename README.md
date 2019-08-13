@@ -108,7 +108,7 @@ For a quick-start guide, see: https://live.osgeo.org/en/quickstart/osgeolive_qui
 
 ### GRASS GIS Add-ons that will be used during the course
 
-* [i.modis](https://grass.osgeo.org/grass7/manuals/addons/i.modis.html): Toolset to download and process MODIS products using pyModis
+* [i.modis](https://grass.osgeo.org/grass7/manuals/addons/i.modis.html): Toolset to download and process MODIS products. It requires [ pyModis](http://www.pymodis.org/info.html#how-to-install-pymodis) library.
 * [v.strds.stats](https://grass.osgeo.org/grass7/manuals/addons/v.strds.stats.html): Zonal statistics from given space-time raster datasets based on a polygons vector map
 
 Install with `g.extension extension=name_of_addon`
