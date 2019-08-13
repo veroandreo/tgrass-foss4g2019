@@ -482,9 +482,21 @@ GRASS GIS and R can be used together in two ways:
 
 
 +++
-### Actinia: The GRASS GIS REST API 
+### *actinia*: The GRASS GIS REST API 
 
-@markus: add more details, pls
+- Open source REST API for scalable, distributed, high performance processing of geo data using GRASS GIS
+- Core functionality includes processing of geo-data and time series of satellite images, raster and vector data. 
+- OSGeo Community Project since 2019
+
+Don't miss *actinia* related FOSS4G talks:
+- [GRASS GIS in the cloud: actinia geoprocessing](https://talks.2019.foss4g.org/bucharest/talk/GCNPMC/)
+- [How digging in the earth for the fibre roll-out took GRASS to the cloud](https://talks.2019.foss4g.org/bucharest/talk/U3DM9L/)
+
+@snap[south-west span-40 text-04]
+https://actinia.mundialis.de/
+<br>
+DOI: 10.5281/zenodo.2631917
+@snapend
 
 @snap[south-east span-30]
 @img[span-50](https://wenzeslaus.github.io/grass-gis-talks/img/actinia_logo.svg)
