@@ -651,7 +651,7 @@ If you are more curious...
 [t.rast.algebra](https://grass.osgeo.org/grass76/manuals/t.rast.algebra.html)
 
 <br> 
-@img[span-85](https://github.com/veroandreo/grass_opengeohub2019/blob/master/assets/img/source_code_link.png)
+@img[span-85](assets/img/source_code_link.png)
 
 
 ---
