@@ -482,7 +482,7 @@ GRASS GIS and R can be used together in two ways:
 
 
 +++
-@snap[north]
+@snap[north span-100]
 ### *actinia*: The GRASS GIS REST API 
 @snapend
 
@@ -492,7 +492,7 @@ GRASS GIS and R can be used together in two ways:
 - Core functionality includes processing of geo-data and time series of satellite images, raster and vector data. 
 - OSGeo Community Project since 2019
 @ulend
-<br><br>
+<br><br><br>
 @snapend
 
 @snap[south-west span-80 text-08]
@@ -506,7 +506,7 @@ Don't miss *actinia* talks at FOSS4G:
 @snapend
 
 @snap[south-east span-30 text-05]
-@img[span-60](https://wenzeslaus.github.io/grass-gis-talks/img/actinia_logo.svg)
+@img[span-70](https://wenzeslaus.github.io/grass-gis-talks/img/actinia_logo.svg)
 <br>
 https://actinia.mundialis.de/
 <br>
