@@ -482,12 +482,8 @@ GRASS GIS and R can be used together in two ways:
 
 
 +++
-@snap[north-west span-80]
+@snap[north]
 ### *actinia*: The GRASS GIS REST API 
-@snapend
-
-@snap[north-east span-30]
-@img[span-60](https://wenzeslaus.github.io/grass-gis-talks/img/actinia_logo.svg)
 @snapend
 
 @snap[midpoint span-100]
@@ -499,7 +495,7 @@ GRASS GIS and R can be used together in two ways:
 <br><br>
 @snapend
 
-@snap[south-west span-100 text-08]
+@snap[south-west span-80 text-08]
 Don't miss *actinia* talks at FOSS4G:
 <br>
 @ul[](false)
@@ -510,6 +506,8 @@ Don't miss *actinia* talks at FOSS4G:
 @snapend
 
 @snap[south-east span-30 text-05]
+@img[span-60](https://wenzeslaus.github.io/grass-gis-talks/img/actinia_logo.svg)
+<br>
 https://actinia.mundialis.de/
 <br>
 DOI:[10.5281/zenodo.2631917](https://doi.org/10.5281/zenodo.2631917)
