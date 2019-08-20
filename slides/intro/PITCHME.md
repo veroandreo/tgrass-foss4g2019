@@ -165,7 +165,6 @@ A bit of (geek) GRASS GIS history...
 ---
 @snap[midpoint span-100]
 Well, except for this... @fa[flushed text-green fa-2x fragment]
-<br>
 @img[span-55](assets/img/start_screen1.png)
 @snapend
 
