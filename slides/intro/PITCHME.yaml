@@ -68,4 +68,10 @@ layout : center
 #
 
 transition : none
-slide-number : true 
+slide-number : true
+
+#
+# Loading
+#
+
+eager-loading : true

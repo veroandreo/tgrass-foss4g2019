@@ -165,7 +165,7 @@ A bit of (geek) GRASS GIS history...
 ---
 @snap[midpoint span-100]
 Well, except for this... @fa[flushed text-green fa-2x fragment]
-<br><br>
+<br>
 @img[span-55](assets/img/start_screen1.png)
 @snapend
 
@@ -275,16 +275,11 @@ or from github (or similar repositories) using
 
 +++
 @snap[west]
-The @color[#8EA33B](**computational region**) is the *actual setting of the region 
-boundaries and the actual raster resolution*.
+The @color[#8EA33B](**computational region**) is the *actual setting of the region boundaries and the actual raster resolution*.
 <br><br>
-The @color[#8EA33B](**computational region**) can be set and changed by means of
-[g.region](https://grass.osgeo.org/grass76/manuals/g.region.html) to the
-extent of a vector map, a raster map or manually to some area of interest. 
+The @color[#8EA33B](**computational region**) can be set and changed by means of [g.region](https://grass.osgeo.org/grass76/manuals/g.region.html) to the extent of a vector map, a raster map or manually to some area of interest. 
 <br><br>
-*Output raster maps* will have their extent and resolution equal to
-those of the current computational region, while vector maps are 
-always considered in their original extent.
+*Output raster maps* will have their extent and resolution equal to those of the current computational region, while vector maps are always considered in their original extent.
 @snapend
 
 
@@ -687,7 +682,7 @@ Let's move on to:
 
 @snap[south span-50]
 @size[18px](Presentation powered by)
-<br>
 <a href="https://gitpitch.com/">
-<img src="assets/img/gitpitch_logo.png" width="20%"></a>
+<img src="assets/img/gitpitch_logo.png" width="30%"></a>
+<br>
 @snapend
