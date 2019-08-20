@@ -276,9 +276,9 @@ or from github (or similar repositories) using
 +++
 @snap[west]
 The @color[#8EA33B](**computational region**) is the *actual setting of the region boundaries and the actual raster resolution*.
-<br><br>
+<br>
 The @color[#8EA33B](**computational region**) can be set and changed by means of [g.region](https://grass.osgeo.org/grass76/manuals/g.region.html) to the extent of a vector map, a raster map or manually to some area of interest. 
-<br><br>
+<br>
 *Output raster maps* will have their extent and resolution equal to those of the current computational region, while vector maps are always considered in their original extent.
 @snapend
 
