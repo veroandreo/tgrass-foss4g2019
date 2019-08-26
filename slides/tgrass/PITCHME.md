@@ -5,9 +5,10 @@
 <h1>Spatio-temporal data processing & visualization in @color[green](GRASS GIS)</h1>
 @snapend
 
-@snap[south message-box-white span-100]
-@size[30px](FOSS4G 2019, Bucharest)
+@snap[south span-100]
+![foss4g logo](https://2019.foss4g.org/wp-content/uploads/2019/01/wide_light_gray.png)
 @snapend
+
 
 ---
 @title[First FOSS GIS with time support]
