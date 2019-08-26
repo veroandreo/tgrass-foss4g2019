@@ -155,7 +155,7 @@ STDS in each mapset.
 
 <br>
 - [modis_lst mapset (2Mb)](https://gitlab.com/veroandreo/grass-gis-geostat-2018/blob/master/data/modis_lst.zip): download and unzip within `$HOME/grassdata/nc_basic_spm_grass7`
-- [nc_state](https://github.com/veroandreo/tgrass-foss4g2019/blob/master/data/nc_state.pack) and [urbanarea](https://github.com/veroandreo/tgrass-foss4g2019/blob/master/data/urbanarea.pack) vector maps: download in $HOME
+- [nc_state](https://github.com/veroandreo/tgrass-foss4g2019/blob/master/data/nc_state.pack) and [urbanarea](https://github.com/veroandreo/tgrass-foss4g2019/blob/master/data/urbanarea.pack) vector maps: download in `$HOME`
 - [GRASS code](https://raw.githubusercontent.com/veroandreo/tgrass-foss4g2019/master/code/05_temporal_code.sh)
 
 
