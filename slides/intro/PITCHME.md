@@ -491,19 +491,17 @@ GRASS GIS and R can be used together in two ways:
 
 @snap[south-west span-75 text-08]
 Don't miss *actinia* talks at FOSS4G!
-<br>
 @ul[](false)
 - [GRASS GIS in the cloud: actinia geoprocessing](https://talks.2019.foss4g.org/bucharest/talk/GCNPMC/)
 - [How digging in the earth for the fibre roll-out took GRASS to the cloud](https://talks.2019.foss4g.org/bucharest/talk/U3DM9L/)
 @ulend
-<br><br><br>
+<br><br>
 @snapend
 
 @snap[south-east span-30 text-05]
 @img[span-70](https://wenzeslaus.github.io/grass-gis-talks/img/actinia_logo.svg)
 <br>
 https://actinia.mundialis.de/
-<br>
 DOI:[10.5281/zenodo.2631917](https://doi.org/10.5281/zenodo.2631917)
 @snapend
 
