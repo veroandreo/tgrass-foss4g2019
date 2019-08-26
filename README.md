@@ -115,15 +115,16 @@ Install with `g.extension extension=name_of_addon`
 
 ## Data
 
-* [North Carolina location (full dataset, 150Mb)](https://grass.osgeo.org/sampledata/north_carolina/nc_spm_08_grass7.zip): download and unzip within `$HOME/grassdata`.
-* [modis_lst mapset (2Mb)](https://gitlab.com/veroandreo/curso-grass-gis-rioiv/raw/master/data/modis_lst.zip?inline=false): download and unzip within the North Carolina location in `$HOME/grassdata/nc_spm_08_grass7`.
+* [North Carolina basic location (approx. 50Mb)](https://grass.osgeo.org/sampledata/north_carolina/nc_basic_spm_grass7.zip): download and unzip within `$HOME/grassdata`.
+* [modis_lst mapset (2Mb)](https://gitlab.com/veroandreo/curso-grass-gis-rioiv/raw/master/data/modis_lst.zip?inline=false): download and unzip within the North Carolina location in `$HOME/grassdata/nc_basic_spm_grass7`.
+* [nc_state vector map](https://github.com/veroandreo/tgrass-foss4g2019/blob/master/data/nc_state.pack): we'll unpack it during the session. 
+* [urbanarea vector map](https://github.com/veroandreo/tgrass-foss4g2019/blob/master/data/urbanarea.pack): we'll unpack it during the session.
 
 Your `grassdata` folder should look like this:
 
 ```
   grassdata/
-   ├── nc_spm_08_grass7
-     ├── landsat
+   ├── nc_basic_spm_grass7
      ├── modis_lst
      ├── PERMANENT
      └── user1

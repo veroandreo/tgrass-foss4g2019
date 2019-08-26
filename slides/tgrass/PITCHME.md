@@ -154,13 +154,27 @@ STDS in each mapset.
 ### @fa[download text-green] get sample mapset and code @fa[download text-green]
 
 <br>
-- [modis_lst mapset (2Mb)](https://gitlab.com/veroandreo/grass-gis-geostat-2018/blob/master/data/modis_lst.zip): download and unzip within `$HOME/grassdata/nc_spm_08_grass7`
+- [modis_lst mapset (2Mb)](https://gitlab.com/veroandreo/grass-gis-geostat-2018/blob/master/data/modis_lst.zip): download and unzip within `$HOME/grassdata/nc_basic_spm_grass7`
+- [nc_state](https://github.com/veroandreo/tgrass-foss4g2019/blob/master/data/nc_state.pack) and [urbanarea](https://github.com/veroandreo/tgrass-foss4g2019/blob/master/data/urbanarea.pack) vector maps: download in $HOME
 - [GRASS code](https://raw.githubusercontent.com/veroandreo/tgrass-foss4g2019/master/code/05_temporal_code.sh)
 
 
 ---?image=assets/img/grass_template.png&position=bottom&size=100% 30%
 
 ## Let's start GRASS GIS! @fa[grin-hearts text-15 text-pink fa-spin]
+
+
+---
+@title[Unpack vector maps]
+
+### Unpack vector maps
+
+<br>
+
+```bash
+v.unpack input=nc_state.pack output=nc_state
+v.unpack input=urbanarea.pack output=urbanarea
+```
 
 
 ---?code=code/05_temporal_code.sh&lang=bash&title=Set computational region and apply MASK
