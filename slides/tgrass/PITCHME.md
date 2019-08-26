@@ -587,9 +587,9 @@ In the GRASS GIS terminal type:
 ## Python
 
 - @color[#8EA33B](t.\*) modules can be called using **grass** or **pygrass** Python libraries
-  - [Example](http://training.gismentors.eu/grass-gis-workshop-jena-2018/units/26.html#)
+  - [Example](http://training.gismentors.eu/grass-gis-workshop-jena-2018/units/26.html)
 - [Python Temporal API](https://grass.osgeo.org/grass76/manuals/libpython/temporal_framework.html)
-  - [Example](http://training.gismentors.eu/grass-gis-workshop-jena-2018/units/22.html)
+  - [Example](http://training.gismentors.eu/grass-gis-workshop-jena-2018/units/22.html#temporal-api)
 
 
 ---
