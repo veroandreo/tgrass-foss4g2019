@@ -515,7 +515,7 @@ We need:
 @[392-393](Install v.strds.stats add-on)
 @[395-398](Extract summer average LST for Raleigh urban area)
 @[409-412](Create outside buffer - 30km)
-@[414-417](Create otside buffer - 15km)
+@[414-417](Create outside buffer - 15km)
 @[419-423](Remove 15km buffer area from the 30km buffer area)
 
 
