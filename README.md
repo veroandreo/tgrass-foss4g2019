@@ -117,8 +117,8 @@ Install with `g.extension extension=name_of_addon`
 
 * [North Carolina basic location (approx. 50Mb)](https://grass.osgeo.org/sampledata/north_carolina/nc_basic_spm_grass7.zip): download and unzip within `$HOME/grassdata`.
 * [modis_lst mapset (2Mb)](https://gitlab.com/veroandreo/curso-grass-gis-rioiv/raw/master/data/modis_lst.zip?inline=false): download and unzip within the North Carolina location in `$HOME/grassdata/nc_basic_spm_grass7`.
-* [nc_state vector map](https://github.com/veroandreo/tgrass-foss4g2019/blob/master/data/nc_state.pack): we'll unpack it during the session. 
-* [urbanarea vector map](https://github.com/veroandreo/tgrass-foss4g2019/blob/master/data/urbanarea.pack): we'll unpack it during the session.
+* [nc_state vector map](https://github.com/veroandreo/tgrass-foss4g2019/blob/master/data/nc_state.pack): download in $HOME, we'll unpack it during the workshop. 
+* [urbanarea vector map](https://github.com/veroandreo/tgrass-foss4g2019/blob/master/data/urbanarea.pack): download in $HOME, we'll unpack it during the workshop.
 
 Your `grassdata` folder should look like this:
 
