@@ -6,7 +6,7 @@
 @snapend
 
 @snap[south span-100]
-[foss4g logo](https://2019.foss4g.org/wp-content/uploads/2019/01/wide_light_gray.png)
+![foss4g logo](https://2019.foss4g.org/wp-content/uploads/2019/01/wide_light_gray.png)
 @snapend
 
 <!---
