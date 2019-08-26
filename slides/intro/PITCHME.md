@@ -218,7 +218,7 @@ When GRASS GIS is started, it connects to the Database, Location and Mapset spec
 @ul[](false)
 - [Raster](https://grass.osgeo.org/grass76/manuals/rasterintro.html) (including [satellite imagery](https://grass.osgeo.org/grass76/manuals/imageryintro.html))
 - [3D raster or voxel](https://grass.osgeo.org/grass76/manuals/raster3dintro.html)
-- [Vector](https://grass.osgeo.org/grass76/manuals/vectorintro.html): point, line, boundary, area, face
+- [2D and 3D Vector](https://grass.osgeo.org/grass76/manuals/vectorintro.html): point, line, centroid, boundary, area, face, volume
 - [Space-time datasets](https://grass.osgeo.org/grass76/manuals/temporalintro.html): collections of raster (**STRDS**), raster 3D (**STR3DS**) or vector (**STVDS**) maps
 @ulend
 @snapend
@@ -473,7 +473,7 @@ GRASS GIS and R can be used together in two ways:
 
 - [Web Processing Service](https://en.wikipedia.org/wiki/Web_Processing_Service) is an [OGC](https://en.wikipedia.org/wiki/Open_Geospatial_Consortium) standard. 
 - [ZOO-Project](http://zoo-project.org/) and [PyWPS](http://pywps.org/) allow the user to run GRASS GIS commands in a simple way through the web.
-
+- See [GRASS GIS Workshop in Jena](http://training.gismentors.eu/grass-gis-workshop-jena-2018/units/27.html) for PyWPS-based examples.
 
 +++
 @snap[north span-100]
@@ -490,7 +490,7 @@ GRASS GIS and R can be used together in two ways:
 @snapend
 
 @snap[south-west span-75 text-08]
-Don't miss *actinia* talks at FOSS4G!
+Don't miss *actinia* talks at FOSS4G 2019!
 @ul[](false)
 - [GRASS GIS in the cloud: actinia geoprocessing](https://talks.2019.foss4g.org/bucharest/talk/GCNPMC/)
 - [How digging in the earth for the fibre roll-out took GRASS to the cloud](https://talks.2019.foss4g.org/bucharest/talk/U3DM9L/)
@@ -635,6 +635,7 @@ DOI:[10.5281/zenodo.2631917](https://doi.org/10.5281/zenodo.2631917)
   with example workflows for different applications
 - grass-user mailing list: Just [subscribe](https://lists.osgeo.org/mailman/listinfo/grass-user) and
   post or check the [archives](https://lists.osgeo.org/pipermail/grass-user/).
+- [Facebook group](https://www.facebook.com/groups/GRASS/)
 
 
 +++
