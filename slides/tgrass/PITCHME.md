@@ -117,9 +117,9 @@ STDS in each mapset.
 @snap[west span-60]
 <br>
 @ul[](false)
-- Download the [**North Carolina full dataset**](https://grass.osgeo.org/sampledata/north_carolina/nc_spm_08_grass7.zip)
+- Download the [**North Carolina basic dataset**](https://grass.osgeo.org/sampledata/north_carolina/nc_basic_spm_grass7.zip)
 - Create a folder in your `$HOME` directory (or Documents) and name it `grassdata`
-- Unzip the file `nc_spm_08_grass7.zip` within `grassdata`
+- Unzip the file `nc_basic_spm_grass7.zip` within `grassdata`
 @ulend
 @snapend
 
@@ -167,7 +167,7 @@ STDS in each mapset.
 ---
 @title[Unpack vector maps]
 
-### Unpack vector maps
+### Unpack vector maps into `modis_lst` mapset
 
 <br>
 
