@@ -582,14 +582,6 @@ In the GRASS GIS terminal type:
 
 
 ---
-@title[Questions]
-
-## QUESTIONS?
-
-<img src="assets/img/gummy-question.png" width="45%">
-
-
----
 @title[Python]
 
 ## Python
@@ -598,6 +590,14 @@ In the GRASS GIS terminal type:
   - [Example](http://training.gismentors.eu/grass-gis-workshop-jena-2018/units/26.html#)
 - [Python Temporal API](https://grass.osgeo.org/grass76/manuals/libpython/temporal_framework.html)
   - [Example](http://training.gismentors.eu/grass-gis-workshop-jena-2018/units/22.html)
+
+
+---
+@title[Questions]
+
+## QUESTIONS?
+
+<img src="assets/img/gummy-question.png" width="45%">
 
 
 ---
