@@ -527,7 +527,7 @@ We need:
 +++?code=code/05_temporal_code.sh&lang=bash&title=Summer SUHI for the city of Raleigh and surroundings
 
 @[392-393](Install v.strds.stats add-on)
-@[395-398](Extract summer average LST for Raleigh urban area)
+@[395-404](Extract summer average LST for Raleigh urban area)
 @[409-412](Create outside buffer - 30km)
 @[414-417](Create outside buffer - 15km)
 @[419-423](Remove 15km buffer area from the 30km buffer area)
@@ -622,7 +622,7 @@ In the GRASS GIS terminal type:
 - [Temporal data processing wiki](https://grasswiki.osgeo.org/wiki/Temporal_data_processing)
 - [GRASS GIS and R for time series processing wiki](https://grasswiki.osgeo.org/wiki/Temporal_data_processing/GRASS_R_raster_time_series_processing)
 - [GRASS GIS temporal workshop at NCSU](http://ncsu-geoforall-lab.github.io/grass-temporal-workshop/)
-- [GRASS GIS workshop held in Jena 2018](http://training.gismentors.eu/grass-gis-workshop-jena-2018/index.html)
+- [GRASS GIS workshop in Jena 2018](http://training.gismentors.eu/grass-gis-workshop-jena-2018/index.html)
 - [GRASS GIS course IRSAE 2018](http://training.gismentors.eu/grass-gis-irsae-winter-course-2018/index.html)
 - [GRASS GIS course in Argentina 2018](https://gitlab.com/veroandreo/curso-grass-gis-rioiv)
 
