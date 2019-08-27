@@ -388,7 +388,7 @@ The GUI's simplified command line offers a *Log file* button to save the history
 ### @fab[python text-12] Python 
 
 - 2 libraries delivered with GRASS GIS: **grass** and **pygrass**, that provide access to modules and internal C functions
-- 1 external library: [**grass-session**](https://github.com/zarch/grass-session) that can be installed with `pip`
+- 1 external library: [**grass-session**](https://github.com/zarch/grass-session) (install with `pip`)
 - They can be combined and they integrate well with [Jupyter](https://jupyter.org/) notebooks
 
 
