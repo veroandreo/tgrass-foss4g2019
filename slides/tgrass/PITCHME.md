@@ -103,23 +103,13 @@ data**, as well as the temporal relationships among time series.
 ---
 @title[Sample location]
 
-@snap[north span-100]
 ### Sample location: North Carolina
-@snapend
 
-@snap[west span-60]
 <br>
-@ul[](false)
+
 - Download the [**North Carolina basic dataset**](https://grass.osgeo.org/sampledata/north_carolina/nc_basic_spm_grass7.zip)
 - Create a folder in your `$HOME` directory (or Documents) and name it `grassdata`
 - Unzip the file `nc_basic_spm_grass7.zip` within `grassdata`
-@ulend
-@snapend
-
-@snap[east span-40]
-<br><br>
-<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-92.32910156250001%2C31.297327991404266%2C-73.98193359375001%2C38.89103282648846&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=7/35.183/-83.156">View Larger Map</a></small>
-@snapend
 
 
 +++
@@ -154,7 +144,7 @@ data**, as well as the temporal relationships among time series.
 
 ---?image=assets/img/grass_template.png&position=bottom&size=100% 30%
 
-## Let's start GRASS GIS! @fa[grin-hearts text-15 text-pink fa-spin]
+## Let's start GRASS GIS! @fa[grin-hearts text-15 text-pink]
 
 
 ---

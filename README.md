@@ -50,20 +50,20 @@ GRASS GIS.
 
 <p align="right">
     <img src="https://2019.foss4g.org/wp-content/uploads/2018/07/logo-site.png" width="250">
-    <img src="https://grass.osgeo.org/uploads/images/logo/grassgis_logo_colorlogo_text_alphabg.png" width="150">
+    <img src="https://grass.osgeo.org/images/logos/grasslogo.svg" width="150">
 </p>
 
 ## Presentations
 
-* [Brief Intro to GRASS GIS](https://gitpitch.com/veroandreo/tgrass-foss4g2019/master?p=slides/intro)
-* [Temporal GRASS GIS](https://gitpitch.com/veroandreo/tgrass-foss4g2019/master?p=slides/tgrass)
+* [Brief Intro to GRASS GIS](https://github.com/veroandreo/tgrass-foss4g2019/blob/master/pdf/intro.pdf)
+* [Temporal GRASS GIS](https://github.com/veroandreo/tgrass-foss4g2019/blob/master/pdf/tgrass.pdf)
 
 ## Software
 
 We will use **GRASS GIS 7.6.1** (current stable version). It can be installed either 
 through standalone installers/binaries or through OSGeo-Live (which includes all
 OSGeo software and packages). See this 
-[**Installation guide**](https://gitpitch.com/veroandreo/grass-gis-conae/master?p=slides/00_installation&grs=gitlab) 
+[**Installation guide**](https://gitlab.com/veroandreo/grass-gis-conae/-/blob/master/pdf/00_installation.pdf) 
 for details (Follow only the GRASS GIS part).
 
 ### Standalone installers for different OS:
