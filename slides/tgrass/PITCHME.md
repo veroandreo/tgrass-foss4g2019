@@ -33,13 +33,6 @@ data**, as well as the temporal relationships among time series.
 - Maps in a STDS can have different spatial and temporal extents
 @ulend
 
-<!---
-TGRASS uses an SQL database to store the temporal and spatial extension
-of STDS, as well as the topological relationships among maps and among
-STDS in each mapset.
---->
-
-
 +++
 @title[STDS]
 
@@ -286,11 +279,6 @@ v.unpack input=urbanarea.pack output=urbanarea
 - **[t.list](https://grass.osgeo.org/grass76/manuals/t.list.html)** for listing STDS and maps registered in the temporal database,
 - **[t.rast.list](https://grass.osgeo.org/grass76/manuals/t.rast.list.html)** for maps in raster time series, and
 - **[t.vect.list](https://grass.osgeo.org/grass76/manuals/t.vect.list.html)** for maps in vector time series.
-
-<!--- list of variables to use for query 
-id, name, creator, mapset, temporal_type, creation_time, start_time, end_time, north, south, west, east, nsres, ewres, cols, rows, number_of_cells, min, max
-id, name, layer, creator, mapset, temporal_type, creation_time, start_time, end_time, north, south, west, east, points, lines, boundaries, centroids, faces, kernels, primitives, nodes, areas, islands, holes, volumes
---->
 
 
 +++?code=code/05_temporal_code.sh&lang=bash&title=Listing examples
@@ -655,6 +643,7 @@ In the GRASS GIS terminal type:
 ---
 @snap[south span-50]
 @size[18px](Presentation powered by)
+<br>
 <a href="https://gitpitch.com/">
 <img src="assets/img/gitpitch_logo.png" width="30%"></a>
 <br>

@@ -9,13 +9,6 @@
 ![foss4g logo](https://2019.foss4g.org/wp-content/uploads/2019/01/wide_light_gray.png)
 @snapend
 
-<!---
-@size[25px](Verónica Andreo, Martin Landa, Ondřej Pešek, Markus Neteler, Luca Delucchi & Moritz Lennert)
-<br><br>
-@size[20px](Instituto Nacional de Medicina Tropical - Consejo Nacional de Investigaciones Científicas y Técnicas. Puerto Iguazú, Argentina / Czech Technical University in Prague. Czech Republic / JRC - Joint Research Centre. Ispra, Italy / mundialis GmbH & Co. KG. Bonn, Germany / Fondazione Edmund Mach. San Michele all’Adige, Italy / Université Libre de Bruxelles. Belgium.)
-<br><br>
---->
-
 ---
 @title[About the trainers]
 
@@ -163,11 +156,10 @@ A bit of (geek) GRASS GIS history...
 
 
 ---
-@snap[midpoint span-100]
-Well, except for this... @fa[flushed text-green fa-2x fragment]
-@img[span-55](assets/img/start_screen1.png)
-@snapend
 
+Well, except for this... @fa[flushed text-green fa-2x fragment]
+
+<img src="assets/img/start_screen1.png" width="50%">
 
 ---
 ## Basic notions
